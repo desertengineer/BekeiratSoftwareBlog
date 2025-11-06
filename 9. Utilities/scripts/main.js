@@ -26,13 +26,21 @@
 // End of link action handlers
 
 // Function to load document content into specified element
-    function loadDoc(filePath,elemSelector) {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          document.getElementById(elemSelector).innerHTML = this.responseText;
-        }
-      };
-      xhttp.open("GET", filePath, true);
-      xhttp.send();
-    }
+/**
+ * Dynamically loads HTML content from a given file URL into a target element.
+ * @param {string} filePath - URL of the HTML file hosted on GitHub (raw version).
+ * @param {string} elemSelector - CSS selector of the element to inject the content into.
+ */
+async function importHTML(filePath,elemSelector) {
+  try {
+    const response = await fetch(filePath);
+    if (!response.ok) throw new Error(`Failed to fetch: ${response.statusText}`);
+
+    const html = await response.text();
+    const target = document.querySelector(elemSelector);
+    if (target) target.innerHTML = html;
+    else console.error(`Selector not found: ${elemSelector}`);
+  } catch (err) {
+    console.error(`Error importing HTML:`, err);
+  }
+} 
