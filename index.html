@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="z_GitSite/icons/Bekeirat Software logoCircle.ico" type="image/x-icon">
 </head>
 
-<body onload="loadDoc('z_GitSite/OnlineHTMLtext.txt')">
+<body onload="loadDoc('z_GitSite/OnlineHTMLtext.txt','demo')">
 
   <nav class="navbar navbar-expand bg-black navbar-dark">
     <div class="container-fluid">
@@ -121,11 +121,11 @@
 
 
   <script>
-    function loadDoc(filePath) {
+    function loadDoc(filePath,elemSelector) {
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("demo").innerHTML = this.responseText;
+          document.getElementById(elemSelector).innerHTML = this.responseText;
         }
       };
       xhttp.open("GET", filePath, true);
