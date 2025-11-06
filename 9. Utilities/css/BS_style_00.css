@@ -1,17 +1,72 @@
-/*img {width: 180px; margin:15px;}*/
-div.header.p-5.bg-primary.text-white.text-center>a>h3 {
-    font-size: medium;
-    color: yellow;
+/* 
+    Disclaimer: The use of `!important` after every rule is generally considered a bad practice in CSS development as it makes debugging and maintenance difficult by overriding the natural cascading order. This combined file is provided strictly as requested by the user.
+*/
+
+/* ----------------------------------------- */
+/* 1. Basic Reset and Box Model setup */
+/* ----------------------------------------- */
+* {
+    /* Ensures padding and borders are included in the element's total width/height */
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.fakeimg {
-    max-width: 100%;
-    height: 200px;
-    background: #aaa;
+/* ----------------------------------------- */
+/* 2. Responsive Typography and Readability */
+/* ----------------------------------------- */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif !important;
+    line-height: 1.6 !important;
+    /* Improve readability */
+    color: #333 !important;
+    /* Good contrast */
+    background-color: #fff !important;
+    font-size: 16px !important;
+    /* Default base font size */
 }
 
-.fakeimg img {
-    max-height: 200px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5em !important;
+    line-height: 1.2 !important;
+    color: #1a1a1a !important;
+}
+
+h1 {
+    font-size: 2.5rem !important;
+    margin-top: 1em !important;
+}
+
+h2 {
+    font-size: 2rem !important;
+    margin-top: 1em !important;
+}
+
+p {
+    margin-bottom: 1em !important;
+    font-size: 1rem !important;
+    /* Use relative unit for scaling */
+}
+
+a {
+    color: #007bff !important;
+    /* Standard blue link color */
+    text-decoration: none !important;
+    /* Remove default underline */
+    transition: color 0.3s ease !important;
+    /* Smooth color transition on hover */
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline !important;
+    /* Add underline on interaction */
+    color: #0056b3 !important;
 }
 
 /* #region dropdown*/
@@ -45,3 +100,74 @@ div.header.p-5.bg-primary.text-white.text-center>a>h3 {
 }
 
 /*#endregion*/
+
+/* ----------------------------------------- */
+/* 3. Layout: Fluid Container and Flexbox */
+/* ----------------------------------------- */
+.container {
+    width: 90% !important;
+    max-width: 1200px !important;
+    /* Prevent container from getting too wide on large screens */
+    margin: 0 auto !important;
+    padding: 20px 0 !important;
+}
+
+.flex-container {
+    display: flex !important;
+    flex-direction: column !important;
+    /* Default to a single column stack (Mobile First) */
+    gap: 20px !important;
+    /* Adds space between items */
+}
+
+.flex-item {
+    padding: 15px !important;
+    background-color: #f8f9fa !important;
+    border: 1px solid #ddd !important;
+}
+
+/* ----------------------------------------- */
+/* 4. Responsive Media (Images and Video) */
+/* ----------------------------------------- */
+img {
+    max-width: 100% !important;
+    /* Ensures the image never exceeds the width of its parent */
+    height: auto !important;
+    /* Maintains the image's aspect ratio */
+    display: block !important;
+    /* Prevents unwanted spacing beneath images */
+    margin: 0 auto !important;
+    /* Centers block images if needed */
+}
+
+/* ----------------------------------------- */
+/* 5. Media Queries (Breakpoints) */
+/* ----------------------------------------- */
+
+/* Tablet layout (screens 600px and up) */
+@media (min-width: 600px) {
+    body {
+        font-size: 17px !important;
+        /* Slightly larger base font */
+    }
+}
+
+/* Desktop layout (screens 768px and up) */
+@media (min-width: 768px) {
+    .flex-container {
+        flex-direction: row !important;
+        /* Switch to a row layout */
+    }
+
+    .flex-item {
+        flex: 1 !important;
+        /* Allows items to grow and fill available space equally */
+    }
+
+    h1 {
+        font-size: 3rem !important;
+    }
+}
+
+
+/* ----------------------------------------- */
