@@ -47,6 +47,12 @@ h2 {
     margin-top: 1em !important;
 }
 
+iframe {
+    width: 100% !important;
+    height: 500px !important;
+    border: none !important;
+}
+
 p {
     margin-bottom: 1em !important;
     font-size: 1rem !important;
