@@ -1,5 +1,5 @@
 /*img {width: 180px; margin:15px;}*/ 
-header a h3{font-size: medium;color: yellow;}
+div.header.p-5.bg-primary.text-white.text-center > a > h3{font-size: medium;color: yellow;}
 .fakeimg {max-width:100%;height: 200px;background: #aaa;}
 .fakeimg img {max-height: 200px;} 
  .dropdown {
