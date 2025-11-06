@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <style>
+        /* Basic styling for all devices */
+        ontact-us {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        } 
+    </style>
+</head>
+
+<body>
+    <h2></h2>
+    <div class='contact-us'>
+        <b:section class='contact' id='contact' showaddelement='no'>
+            <b:widget id='ContactForm1' locked='false' title='نموذج الاتصال' type='ContactForm'>
+                <b:includable id='contact'>
+                    <b:if cond='data:title != &quot;&quot;'>
+                        <h2 class='title'>
+                            <data:title />
+                        </h2>
+                    </b:if>
+                    <div class='contact-form-widget'>
+                        <div class='form'>
+                            <form name='contact-form'>
+                                
+                                <data:contactFormNameMsg />
+                                <br />
+                                <input class='contact-form-name'
+                                    expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' name='name'
+                                    size='30' type='text' value='' />
+                                
+                                <data:contactFormEmailMsg /> <span style='font-weight: bolder;'>*</span>
+                                <br />
+                                <input class='contact-form-email'
+                                    expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' name='email'
+                                    size='30' type='text' value='' />
+                                
+                                <data:contactFormMessageMsg /> <span style='font-weight: bolder;'>*</span>
+                                <br />
+                                <textarea class='contact-form-email-message' cols='25'
+                                    expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;'
+                                    name='email-message' rows='5' />
+                                
+                                <input class='contact-form-button contact-form-button-submit'
+                                    expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;'
+                                    expr:value='data:contactFormSendMsg' type='button' />
+                                
+                                <div style='text-align: center; max-width: 222px; width: 100%'>
+                                    <p class='contact-form-error-message'
+                                        expr:id='data:widget.instanceId + &quot;_contact-form-error-message&quot;' />
+                                    <p class='contact-form-success-message'
+                                        expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;' />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <b:include name='quickedit' />
+                </b:includable>
+            </b:widget>
+        </b:section>
+    </div>
+</body>
+
+</html>
