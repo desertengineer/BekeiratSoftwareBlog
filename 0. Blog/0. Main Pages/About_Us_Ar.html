@@ -1,104 +1,88 @@
+<style>
+  body {
+    font-family: Arial, sans-serif !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    padding: 2rem !important;
+    background-color: #f9f9f9 !important;
+    color: #333 !important;
+  }
 
-<!-- <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+  .container {
+    max-width: 800px !important;
+    margin: auto !important;
+    background: #fff !important;
+    padding: 2rem !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="تعرف على برمجيات بكيرات – رسالتنا، قيمنا، ونهجنا في تطوير تطبيقات التعليم والترفيه." />
-  <title>من نحن |برمجيات بكيرات </title>
-</head>
+  h1 {
+    font-size: 2rem !important;
+    margin-bottom: 1rem !important;
+    color: #222 !important;
+  }
 
-<body> -->
-  <style>
-    body {
-      font-family: Arial, sans-serif !important;
-      line-height: 1.6 !important;
-      margin: 0 !important;
-      padding: 2rem !important;
-      background-color: #f9f9f9 !important;
-      color: #333 !important;
-    }
+  p {
+    margin-bottom: 1.25rem !important;
+  }
 
-    .container {
-      max-width: 800px !important;
-      margin: auto !important;
-      background: #fff !important;
-      padding: 2rem !important;
-      border-radius: 10px !important;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
-    }
+  strong {
+    color: #000 !important;
+  }
 
-    h1 {
-      font-size: 2rem !important;
-      margin-bottom: 1rem !important;
-      color: #222 !important;
-    }
+  .flex-container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: ltr;
+  }
 
-    p {
-      margin-bottom: 1.25rem !important;
-    }
+  .flex-container img {
+    width: 100px;
+    height: auto;
+    display: block;
+  }
 
-    strong {
-      color: #000 !important;
-    }
+  .flex-container .title {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    white-space: nowrap;
+  }
 
+  @media (max-width: 480px) {
     .flex-container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 10px;
-      box-sizing: border-box;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      direction: ltr;
-    }
-
-    .flex-container img {
-      width: 100px;
-      height: auto;
-      display: block;
+      flex-direction: column;
+      text-align: center;
     }
 
     .flex-container .title {
-      font-size: 1.5rem;
-      margin-left: 10px;
-      white-space: nowrap;
+      margin: 10px 0 0 0;
     }
-
-    @media (max-width: 480px) {
-      .flex-container {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .flex-container .title {
-        margin: 10px 0 0 0;
-      }
-    }
-  </style>
-  <div class="container">
-    <div class="flex-container">
-      <img src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/0. Blog_Arts/Bekeirat Software logo.png"
-        alt="Bekeirat Software">
-      <div class="title">برمجيات بكيرات Bekeirat Software</div>
-    </div>
-    <p>
-      في <strong>برمجيات بكيرات</strong>، نقوم بتطوير مجموعة واسعة من تطبيقات التعليم والترفيه المصممة لخدمة المتعلمين
-      من جميع الأعمار. هدفنا هو جعل التعلم أكثر تفاعلية، وأسهل وصولًا، وأكثر فائدة للأفراد والعائلات على حد سواء. كل
-      تطبيق نصممه يُبنى على أساس من الإبداع والوظائف الذكية، بهدف تحسين نتائج التعلم وتقديم تجارب غنية.
-    </p>
-    <p>
-      نحن نسترشد بثلاثة مبادئ أساسية: <strong>الذكاء</strong>، <strong>النزاهة</strong>، و<strong>الابتكار</strong>. هذه
-      القيم لا توجه فقط طريقة تصميمنا للتطبيقات، بل تؤثر أيضًا في أسلوب عملنا وتواصلنا مع المستخدمين. سواء كان التطبيق
-      لعبة تطوّر مهارات التفكير النقدي، أو أداة تدعم التعليم المبكر، فإن هدفنا هو تقديم أدوات مفيدة وممتعة في آنٍ واحد.
-    </p>
-    <p>
-      نحن نؤمن أيضًا بأن الوصول إلى المعرفة حق للجميع. لذلك نلتزم بتوفير مكتبة متنامية من التطبيقات عالية الجودة بشكل
-      مجاني تمامًا وبدون أي قيود. كل شخص يستحق فرصة للتعلم والاستكشاف — ونحن هنا لنُسهّل ذلك، تطبيقًا بعد الآخر.
-    </p>
+  }
+</style>
+<div class="container">
+  <div class="flex-container">
+    <img src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/0. Blog_Arts/Bekeirat Software logo.png"
+      alt="Bekeirat Software">
+    <div class="title">Bekeirat Software برمجيات بكيرات</div>
   </div>
-<!-- </body>
-
-</html> -->
+  <p>
+    في <strong>برمجيات بكيرات</strong>، نقوم بتطوير مجموعة واسعة من تطبيقات التعليم والترفيه المصممة لخدمة المتعلمين
+    من جميع الأعمار. هدفنا هو جعل التعلم أكثر تفاعلية، وأسهل وصولًا، وأكثر فائدة للأفراد والعائلات على حد سواء. كل
+    تطبيق نصممه يُبنى على أساس من الإبداع والوظائف الذكية، بهدف تحسين نتائج التعلم وتقديم تجارب غنية.
+  </p>
+  <p>
+    نحن نسترشد بثلاثة مبادئ أساسية: <strong>الذكاء</strong>، <strong>النزاهة</strong>، و<strong>الابتكار</strong>. هذه
+    القيم لا توجه فقط طريقة تصميمنا للتطبيقات، بل تؤثر أيضًا في أسلوب عملنا وتواصلنا مع المستخدمين. سواء كان التطبيق
+    لعبة تطوّر مهارات التفكير النقدي، أو أداة تدعم التعليم المبكر، فإن هدفنا هو تقديم أدوات مفيدة وممتعة في آنٍ واحد.
+  </p>
+  <p>
+    نحن نؤمن أيضًا بأن الوصول إلى المعرفة حق للجميع. لذلك نلتزم بتوفير مكتبة متنامية من التطبيقات عالية الجودة بشكل
+    مجاني تمامًا وبدون أي قيود. كل شخص يستحق فرصة للتعلم والاستكشاف — ونحن هنا لنُسهّل ذلك، تطبيقًا بعد الآخر.
+  </p>
+</div>
