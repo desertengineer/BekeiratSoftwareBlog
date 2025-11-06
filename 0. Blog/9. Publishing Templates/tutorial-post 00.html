@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+<style>
+#tutorial-post {
+  font-family: 'Cairo', sans-serif !important;
+  margin: 20px auto !important;
+  max-width: 900px !important;
+  padding: 10px !important;
+  direction: rtl !important;
+  text-align: right !important;
+}
+.tutorial-title {
+  font-size: 26px !important;
+  margin-bottom: 5px !important;
+}
+.tutorial-desc {
+  font-size: 16px !important;
+  color: #555 !important;
+}
+.filter-buttons {
+  margin: 20px 0 !important;
+}
+.filter-buttons button {
+  margin-left: 10px !important;
+  padding: 6px 12px !important;
+  cursor: pointer !important;
+  border: none !important;
+  background: #007BFF !important;
+  color: white !important;
+  border-radius: 4px !important;
+}
+.steps-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 20px !important;
+}
+.step-card {
+  width: calc(33% - 20px) !important;
+  border: 1px solid #eee !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+  background: #f9f9f9 !important;
+}
+.step-card img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 5px !important;
+}
+.step-card h4 {
+  margin: 10px 0 5px !important;
+}
+@media (max-width: 768px) {
+  .step-card {
+    width: 100% !important;
+  }
+}
+</style>
+
+</head>
+<body>
+    <!-- Container -->
+<div id="tutorial-post" dir="rtl">
+
+  <!-- Title -->
+  <h2 class="tutorial-title">كيفية إنشاء حساب جيميل ووضع تصنيفات للبريد</h2>
+  <p class="tutorial-desc">دليل مرئي خطوة بخطوة للمبتدئين باستخدام لقطات شاشة تم إنشاؤها بواسطة الذكاء الاصطناعي.</p>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button onclick="filterSteps('all')">الكل</button>
+    <button onclick="filterSteps('gmail')">جيميل</button>
+    <button onclick="filterSteps('word')">وورد</button>
+  </div>
+
+  <!-- Steps Grid -->
+  <div class="steps-grid">
+
+    <!-- Step 1 -->
+    <div class="step-card gmail">
+      <img src="https://colony-recorder.s3.amazonaws.com/files/2025-08-08/9fda388d-770b-47a3-9c07-7fb5f3d77637/ascreenshot.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JDELI43R35HWXUZ%2F20250808%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20250808T224927Z&X-Amz-Expires=36000&X-Amz-SignedHeaders=host&X-Amz-Signature=4f8abfda1c3bb986a8732743ef86335999e426e1405d2cb02106d59b85be6ed9" alt="فتح جيميل">
+      <h4>الخطوة ١: الذهاب إلى Gmail.com</h4>
+      <p>انتقل إلى <strong>www.gmail.com</strong> في متصفحك لبدء العملية.</p>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-card gmail">
+      <img src="https://example.com/screenshots/gmail_step2.jpg" alt="إنشاء حساب">
+      <h4>الخطوة ٢: انقر على "إنشاء حساب"</h4>
+      <p>اختر "لنفسي" أو "للنشاط التجاري".</p>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step-card gmail">
+      <img src="https://example.com/screenshots/gmail_step3.jpg" alt="نموذج التسجيل">
+      <h4>الخطوة ٣: املأ نموذج التسجيل</h4>
+      <p>أدخل اسمك، بريدك الإلكتروني، كلمة المرور، والمعلومات الأخرى.</p>
+    </div>
+
+    <!-- أضف خطوات إضافية هنا -->
+
+  </div>
+</div>
+<!-- Filter Script -->
+<script>
+function filterSteps(category) {
+  const steps = document.querySelectorAll('.step-card');
+  steps.forEach(step => {
+    if (category === 'all' || step.classList.contains(category)) {
+      step.style.display = 'block';
+    } else {
+      step.style.display = 'none';
+    }
+  });
+}
+</script>
+
+</body>
+</html>

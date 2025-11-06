@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet"
+      href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/css/AI_Apps_Grid.css"> -->
+  </head>
+  <body style="width:890px!important;margin: 0 auto!important;">
+    <img border="0"
+      src="https://upload.wikimedia.org/wikipedia/commons/5/51/Artificial_Intelligence%2C_AI.jpg"
+      style=" display:none!important" width="64" height="64" />
+    <style>
+  /* body {
+  font-family: Arial, sans-serif !important;
+  padding: 20px !important;
+  background-color: #f9f9f9 !important;
+} */
+
+.search-container {
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  background-color: #ccc6c6!important;
+}
+
+.search-container input {
+  padding: 10px !important;
+  width: 50% !important;
+  max-width: 300px !important;
+  border-radius: 5px !important;
+  border: 1px solid #ccc !important;
+  font-size: 14px !important;
+  direction: inherit !important;
+}
+
+.filter-buttons {
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  background-color: rgb(236, 240, 160)!important;
+}
+
+.filter-buttons button {
+  font-size: 16px !important;
+  padding: 10px 15px !important;
+  margin: 5px !important;
+  border: none !important;
+  cursor: pointer !important;
+  background-color: #0313a2 !important;
+  color: white !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s !important;
+}
+
+.filter-buttons button:hover {
+  background-color: maroon !important;
+}
+
+.grid-container {
+  background-color: #0313a2 !important;
+  padding: 12px!important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  gap: 12px !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+.grid-item {
+  background:  rgb(236, 240, 160) !important;
+  padding: 15px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+  text-align: center !important;
+  transition: transform 0.3s !important;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px) !important;
+}
+
+.grid-item img {
+  width: 100% !important;
+  height: 150px !important;
+  object-fit: cover !important;
+  border-radius: 5px !important;
+}
+
+.grid-item h2 {
+  font-size: 18px !important;
+  margin: 10px 0 5px !important;
+}
+
+.grid-item p {
+  font-size: 14px !important;
+  color: #666 !important;
+}
+
+.grid-item a {
+  display: inline-block !important;
+  font-size: larger !important;
+  font-weight: 900!important;
+  margin-top: 10px !important;
+  text-decoration: none !important;
+  color: maroon !important;
+}
+
+.pagination {
+  text-align: center !important;
+  margin-top: 20px !important;
+}
+
+.pagination button {
+  padding: 8px 12px !important;
+  margin: 0 5px !important;
+  border: none !important;
+  background: #ddd !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+}
+
+.pagination button.active {
+  background-color: darkgreen!important;
+  color: white !important;
+}
+
+.fade-out {
+  opacity: 0 !important;
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+
+body[dir="rtl"] {
+  text-align: right !important;
+}
+
+body[dir="rtl"] .grid-item p,
+body[dir="rtl"] .grid-item h2 {
+  direction: rtl !important;
+}
+</style>
+    <!-- Search Input -->
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="بحث..."
+        oninput="handleSearch()" />
+    </div>
+
+    <!-- Category Filter Buttons -->
+    <div id="filter-buttons" class="filter-buttons"></div>
+
+    <!-- Grid Container -->
+    <div id="grid-container" class="grid-container"></div>
+
+    <!-- Pagination Controls -->
+    <div id="pagination" class="pagination"></div>
+
+    <!-- Script -->
+    <script
+      src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/js/AI_Apps_Grid.js"></script>
+  </body>
+</html>
