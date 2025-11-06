@@ -10,7 +10,8 @@
     <!-- External Fonts & Icons -->
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' rel='stylesheet' type='text/css'/>
     <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap' rel='stylesheet'/>
-    <b:skin><![CDATA[
+    <b:skin>
+      <![CDATA[
       
     /*----------------------------------------------------------------*/
     /* 1. THEME VARIABLES & GENERAL STYLES
@@ -323,7 +324,8 @@
   }
 
     
-    ]]></b:skin>
+    ]]>
+    </b:skin>
   </head>
   <body>
     <div class='blog-wrapper'>
@@ -405,7 +407,7 @@
               </li>
             </ul>
           </li>
-          <li class='menu-item'>أوفيس Office 
+          <li class='menu-item'>أوفيس Office
             <ul class='dropdown-menu'>
               <li>
                 <a href='#'>تطبيقات أوفيس</a>
@@ -415,7 +417,7 @@
               </li>
             </ul>
           </li>
-          <li class='menu-item'>ويندوز Windows 
+          <li class='menu-item'>ويندوز Windows
             <ul class='dropdown-menu'>
               <li>
                 <a href='#'>تطبيقات ويندوز</a>
@@ -435,7 +437,7 @@
               </li>
             </ul>
           </li>
-          <li class='menu-item'>الذكاء الاصطناعي AI 
+          <li class='menu-item'>الذكاء الاصطناعي AI
             <ul class='dropdown-menu'>
               <li>
                 <a href='https://bekeiratsoftware.blogspot.com/p/ai.html'>تطبيقات الذكاء الاصطناعي</a>
@@ -1428,14 +1430,13 @@
               <b:widget-setting name='copyright'/>
             </b:widget-settings>
             <b:includable id='main'>
-    <div class='widget-content' style='text-align: center;'>
-      <b:if cond='data:attribution != &quot;&quot;'>
-       <data:attribution/>
-      </b:if>
-    </div>
-
-    <b:include name='quickedit'/>
-  </b:includable>
+              <div class='widget-content' style='text-align: center;'>
+                <b:if cond='data:attribution != &quot;&quot;'>
+                  <data:attribution/>
+                </b:if>
+              </div>
+              <b:include name='quickedit'/>
+            </b:includable>
           </b:widget>
         </b:section>
       </div>
