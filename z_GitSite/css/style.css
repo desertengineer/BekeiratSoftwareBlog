@@ -13,8 +13,7 @@ div.header.p-5.bg-primary.text-white.text-center>a>h3 {
 .fakeimg img {
     max-height: 200px;
 }
-
-/* #region dropdown*/
+ 
 .dropdown {
     position: relative;
     display: inline-block;
