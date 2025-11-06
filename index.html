@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="z_GitSite/icons/Bekeirat Software logoCircle.ico" type="image/x-icon">
 </head>
 
-<body onload="loadDoc()">
+<body onload="loadDoc('z_GitSite/OnlineHTMLtext.txt')">
 
   <nav class="navbar navbar-expand bg-dark navbar-dark">
     <div class="container-fluid">
@@ -128,7 +128,7 @@
           document.getElementById("demo").innerHTML = this.responseText;
         }
       };
-      xhttp.open("GET", "https://desertengineer.github.io/BekeiratSoftwareBlog/0. Blog/OnlineHTMLtext.txt", true);
+      xhttp.open("GET", filePath, true);
       xhttp.send();
     }
   </script>
