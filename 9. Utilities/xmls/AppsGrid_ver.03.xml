@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<apps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<app>
+		<name>خمن عاصمة الدولة</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/Ar/ArArCapitalsIcon_512X512.png</icon>
+		<description>اختبر معلوماتك عن عواصم العالم.</description>
+		<category>Capitals</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.khmnsmldwl</playstore>
+		<direction>rtl</direction>
+		<lang>Ar</lang>
+		<youtube/>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArCapitals/ArArCapitals1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArCapitals/ArArCapitals2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArCapitals/ArArCapitals3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArCapitals/ArArCapitals4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArCapitals/ArArCapitals5.png</image>
+			<image/>
+		</screenshots>
+	</app>
+	<app>
+		<name>العب وتعرف على اعلام البلدان</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/Ar/ArArFlagsIcon_512X512.png</icon>
+		<description>تحدي معرفتك مع لعبة الأسئلة الشيقة 'العب وتعرف على اعلام البلدان</description>
+		<category>Flags</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.lbwtrfllmlbldn</playstore>
+		<direction>rtl</direction>
+		<lang>Ar</lang>
+		<youtube>https://www.youtube.com/embed/Om4-5Wqtb3M</youtube>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArFlags/ArArFlags1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArFlags/ArArFlags2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArFlags/ArArFlags3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArFlags/ArArFlags4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArFlags/ArArFlags5.png</image>
+			<image/>
+		</screenshots>
+	</app>
+	<app>
+		<name>معالم مشهورة</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/Ar/ArArLandmarksIcon_512X512.png</icon>
+		<description>اختبر معرفتك بالمعالم العالمية المشهورة !</description>
+		<category>Landmarks</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.myguessthepic</playstore>
+		<direction>rtl</direction>
+		<lang>Ar</lang>
+		<youtube>https://youtube.com/embed/FzVRvcpm6J8</youtube>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLandmarks/ArArLandmarks1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLandmarks/ArArLandmarks2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLandmarks/ArArLandmarks3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLandmarks/ArArLandmarks4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLandmarks/ArArLandmarks5.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLandmarks/ArArLandmarks6.png</image>
+		</screenshots>
+	</app>
+	<app>
+		<name>لمن هذا الشعار؟</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/Ar/ArArLogosIcon_512X512.png</icon>
+		<description>تحدي معرفتك واختبر ذكائك في لعبة تريفيا الشعارات العربية الممتعة!</description>
+		<category>Logos</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.amyguessthepic</playstore>
+		<direction>rtl</direction>
+		<lang>Ar</lang>
+		<youtube>https://www.youtube.com/embed/L7L6PBUtj8s</youtube>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLogos/ArArLogos1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLogos/ArArLogos2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLogos/ArArLogos3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLogos/ArArLogos4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLogos/ArArLogos5.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArLogos/ArArLogos6.png</image>
+		</screenshots>
+	</app>
+	<app>
+		<name>شخصيات عالمية</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/Ar/ArArPeopleIcon_512X512.png</icon>
+		<description>تحدي معرفتك بالشخصيات العالمية في لعبة خمن الشخصية</description>
+		<category>People</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.shkhsytlmy</playstore>
+		<direction>rtl</direction>
+		<lang>Ar</lang>
+		<youtube/>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArPeople/ArArPeople1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArPeople/ArArPeople2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArPeople/ArArPeople3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArPeople/ArArPeople4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArPeople/ArArPeople5.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArPeople/ArArPeople6.png</image>
+		</screenshots>
+	</app>
+	<app>
+		<name>خمن لاعب كرة القدم</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/Ar/ArArPlayersIcon_512X512.png</icon>
+		<description>مرحبا بكم في لعبة لاعبي كرة القدم في كل العصور!</description>
+		<category>Players</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.hltrfhdhlb</playstore>
+		<direction>rtl</direction>
+		<lang>Ar</lang>
+		<youtube>https://youtube.com/embed/TGWJQezPS8g</youtube>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArPlayers/ArArPlayers1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArPlayers/ArArPlayers2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArPlayers/ArArPlayers3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArPlayers/ArArPlayers4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/ArPlayers/ArArPlayers5.png</image>
+			<image/>
+		</screenshots>
+	</app>
+	<app>
+		<name>Guess the World Capitals Quiz</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/En/EnEnCapitalsIcon_512X512.png</icon>
+		<description>Test your knowledge of the world countries! Capitals Quiz</description>
+		<category>Capitals</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.guesstheworldcapitalsquiz</playstore>
+		<direction>ltr</direction>
+		<lang>En</lang>
+		<youtube/>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnCapitals/EnEnCapitals1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnCapitals/EnEnCapitals2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnCapitals/EnEnCapitals3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnCapitals/EnEnCapitals4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnCapitals/EnEnCapitals5.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnCapitals/EnEnCapitals6.png</image>
+		</screenshots>
+	</app>
+	<app>
+		<name>Guess the Country Name</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/En/EnEnFlagsIcon_512X512.png</icon>
+		<description>Test your knowledge of geography! Identify world flags in this game.</description>
+		<category>Flags</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.guessthecountryname</playstore>
+		<direction>ltr</direction>
+		<lang>En</lang>
+		<youtube>https://www.youtube.com/embed/jq3pZN5jI0E</youtube>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnFlags/EnEnFlags1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnFlags/EnEnFlags2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnFlags/EnEnFlags3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnFlags/EnEnFlags4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnFlags/EnEnFlags5.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnFlags/EnEnFlags6.png</image>
+		</screenshots>
+	</app>
+	<app>
+		<name>Famous Landmarks Quiz</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/En/EnEnLandmarksIcon_512X512.png</icon>
+		<description>Identify the most attractive landmarks in the world!</description>
+		<category>Landmarks</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.amlmmshhwr</playstore>
+		<direction>ltr</direction>
+		<lang>En</lang>
+		<youtube>https://www.youtube.com/embed/gJfhc18o1ec</youtube>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLandmarks/EnEnLandmarks1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLandmarks/EnEnLandmarks2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLandmarks/EnEnLandmarks3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLandmarks/EnEnLandmarks4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLandmarks/EnEnLandmarks5.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLandmarks/EnEnLandmarks6.jpg</image>
+		</screenshots>
+	</app>
+	<app>
+		<name>Do you know this Logo?</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/En/EnEnLogosIcon_512X512.png</icon>
+		<description>Challenge your knowledge to guess the Cars, Sports, Food and Business Logos</description>
+		<category>Logos</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.doyouknowthislogo</playstore>
+		<direction>ltr</direction>
+		<lang>En</lang>
+		<youtube>https://www.youtube.com/embed/92jk22sgc1g</youtube>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLogos/EnEnLogos1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLogos/EnEnLogos2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLogos/EnEnLogos3.jpg</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLogos/EnEnLogos4.jpg</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLogos/EnEnLogos5.jpg</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnLogos/EnEnLogos6.jpg</image>
+		</screenshots>
+	</app>
+	<app>
+		<name>International Personalities</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/En/EnEnPeopleIcon_512X512.png</icon>
+		<description>Challenge yourself in this exciting Personalities puzzle game</description>
+		<category>People</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.internationalpersonalities</playstore>
+		<direction>ltr</direction>
+		<lang>En</lang>
+		<youtube/>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnPeople/EnPeople1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnPeople/EnPeople2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnPeople/EnPeople3.jpg</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnPeople/EnPeople4.jpg</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnPeople/EnPeople5.jpg</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnPeople/EnPeople6.jpg</image>
+		</screenshots>
+	</app>
+	<app>
+		<name>Guess the Footballer Quiz</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/En/EnEnPlayersIcon_512X512.png</icon>
+		<description>Do you know this player?</description>
+		<category>Players</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.footballersofalltime</playstore>
+		<direction>ltr</direction>
+		<lang>En</lang>
+		<youtube>https://youtube.com/embed/KfMXk0jMOCQ</youtube>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnPlayers/EnEnPlayers1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnPlayers/EnEnPlayers2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnPlayers/EnEnPlayers3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnPlayers/EnEnPlayers4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EnPlayers/EnEnPlayers5.png</image>
+			<image/>
+		</screenshots>
+	</app>
+	<app>
+		<name>Adivina la capital del país</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/Es/EsEsCapitalsIcon_512X512.png</icon>
+		<description>Pon a prueba tus conocimientos sobre las capitales del mundo.</description>
+		<category>Capitals</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.cubbyclips</playstore>
+		<direction>ltr</direction>
+		<lang>Es</lang>
+		<youtube/>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsCapitals/EsEsCapitals1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsCapitals/EsEsCapitals2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsCapitals/EsEsCapitals3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsCapitals/EsEsCapitals4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsCapitals/EsEsCapitals5.png</image>
+			<image/>
+		</screenshots>
+	</app>
+	<app>
+		<name>Adivina el nombre del país</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/Es/EsEsFlagsIcon_512X512.png</icon>
+		<description>Pon a prueba tus conocimientos de geografía! Identifica banderas del mundo en este juego.</description>
+		<category>Flags</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.adivinaelnombredelpais</playstore>
+		<direction>ltr</direction>
+		<lang>Es</lang>
+		<youtube/>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsFlags/EsEsFlags1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsFlags/EsEsFlags2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsFlags/EsEsFlags3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsFlags/EsEsFlags4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsFlags/EsEsFlags5.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsFlags/EsEsFlags6.png</image>
+		</screenshots>
+	</app>
+	<app>
+		<name>¿Conoces este logotipo?</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/Es/EsEsLogosIcon_512X512.png</icon>
+		<description>Pon a prueba tus conocimientos para adivinar este logo</description>
+		<category>Logos</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.conocesestelogotipo</playstore>
+		<direction>ltr</direction>
+		<lang>Es</lang>
+		<youtube/>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsLogos/EsPlayers1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsLogos/EsPlayers2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsLogos/EsPlayers3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsLogos/EsPlayers4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsLogos/EsPlayers5.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsLogos/EsPlayers6.png</image>
+		</screenshots>
+	</app>
+	<app>
+		<name>Personalidades internacionales</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/Es/EsEsPeopleIcon_512X512.png</icon>
+		<description>Ponte a prueba en este emocionante juego de rompecabezas de personalidades.</description>
+		<category>People</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.personalidadesinternacionales</playstore>
+		<direction>ltr</direction>
+		<lang>Es</lang>
+		<youtube/>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPeople/EsEsPeople1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPeople/EsEsPeople2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPeople/EsEsPeople3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPeople/EsEsPeople4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPeople/EsEsPeople5.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPeople/EsEsPeople6.png</image>
+		</screenshots>
+	</app>
+	<app>
+		<name>Adivina el jugador</name>
+		<icon>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Apps_Grid/images/Es/EsEsPlayersIcon_512X512.png</icon>
+		<description>¿Conoces a este jugador?</description>
+		<category>Players</category>
+		<playstore>https://play.google.com/store/apps/details?id=com.bekeiratsoftware.adivinaeljugador</playstore>
+		<direction>ltr</direction>
+		<lang>Es</lang>
+		<youtube/>
+		<screenshots>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPlayers/EsEsPlayers1.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPlayers/EsEsPlayers2.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPlayers/EsEsPlayers3.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPlayers/EsEsPlayers4.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPlayers/EsEsPlayers5.png</image>
+			<image>https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AppsScreenshots/EsPlayers/EsEsPlayers6.png</image>
+		</screenshots>
+	</app>
+</apps>
