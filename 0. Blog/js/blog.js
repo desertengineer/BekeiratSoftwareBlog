@@ -1,4 +1,6 @@
+// 
 function loadBlogData() {
+    console.log("Hello: loadBlogData");
     // Define data objects for each category
     const cssData = {
         folder: "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/css/",
