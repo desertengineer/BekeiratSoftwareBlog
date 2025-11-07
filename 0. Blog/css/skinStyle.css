@@ -1,314 +1,368 @@
-<b:skin><![CDATA[
-      
+< ![CDATA[
+
+/*----------------------------------------------------------------*/
+/* 1. THEME VARIABLES & GENERAL STYLES
     /*----------------------------------------------------------------*/
-    /* 1. THEME VARIABLES & GENERAL STYLES
+:root {
+    --main-bg-color: #f4f7f6;
+    --content-bg-color: #ffffff;
+    --primary-text-color: #333333;
+    --secondary-text-color: #555555;
+    --accent-color: #0e0fd8;
+    --dark-blue: #2c3e50;
+    --light-gray: #ecf0f1;
+    --border-color: #e0e0e0;
+    --blog-max-width: 1300px;
+    --sidebar-width: 280px;
+    --header-max-height: 250px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    color: var(--primary-text-color);
+}
+
+.blog-wrapper {
+    max-width: var(--blog-max-width);
+    margin: 0 auto;
+    background-color: var(--content-bg-color);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+/*----------------------------------------------------------------*/
+/* 2. LAYOUT SECTIONS
     /*----------------------------------------------------------------*/
-    :root {
-      --main-bg-color: #f4f7f6;
-      --content-bg-color: #ffffff;
-      --primary-text-color: #333333;
-      --secondary-text-color: #555555;
-      --accent-color: #0e0fd8;
-      --dark-blue: #2c3e50;
-      --light-gray: #ecf0f1;
-      --border-color: #e0e0e0;
-      --blog-max-width: 1300px; 
-      --sidebar-width: 280px;
-      --header-max-height: 250px;
-    }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--main-bg-color);
-      color: var(--primary-text-color);
-    }
+/* --- 2.1 Top Navigation --- */
+.top-nav-section {
+    width: 100%;
+    background-color: var(--dark-blue);
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
 
-    .blog-wrapper {
-        max-width: var(--blog-max-width);
-        margin: 0 auto;
-        background-color: var(--content-bg-color);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-    }
+.top-nav-content {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Changed for RTL */
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--blog-max-width);
+    margin: 0 auto;
+}
 
-    a {
-      color: var(--accent-color);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Inter', sans-serif;
-      font-weight: 700;
-    }
+.social-icons a {
+    color: var(--light-gray);
+    margin: 0 8px;
+    font-size: 16px;
+}
 
-    /*----------------------------------------------------------------*/
-    /* 2. LAYOUT SECTIONS
-    /*----------------------------------------------------------------*/
+.nav-buttons a {
+    color: var(--light-gray);
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
-    /* --- 2.1 Top Navigation --- */
-    .top-nav-section {
-        width: 100%;
-        background-color: var(--dark-blue);
-        padding: 10px 20px;
-        box-sizing: border-box;
-    }
-    .top-nav-content {
-        display: flex;
-        flex-direction: row-reverse; /* Changed for RTL */
-        justify-content: space-between;
-        align-items: center;
-        max-width: var(--blog-max-width);
-        margin: 0 auto;
-    }
-    .social-icons a {
-        color: var(--light-gray);
-        margin: 0 8px;
-        font-size: 16px;
-    }
-    .nav-buttons a {
-        color: var(--light-gray);
-        padding: 8px 12px;
-        font-weight: 600;
-        font-size: 14px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-    .nav-buttons a:hover {
-        background-color: #34495e;
-        text-decoration: none;
-    }
+.nav-buttons a:hover {
+    background-color: #34495e;
+    text-decoration: none;
+}
 
-    /* --- 2.2 Header --- */
-    .header-section {
-        width: 100%;
-        height: var(--header-max-height);
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f0f0f0;
-    }
-    .header-section img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+/* --- 2.2 Header --- */
+.header-section {
+    width: 100%;
+    height: var(--header-max-height);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
 
-    /* --- 2.3 Page Menu (Dropdowns) --- */
-    .page-menu-section {
-        width: 100%;
-        background-color: #3498db;
-        position: relative;
-        z-index: 1000;
-    }
-    .page-menu-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row-reverse; /* Added for RTL */
-        justify-content: flex-end; /* Aligns items to the right */
-        max-width: var(--blog-max-width);
-        margin: 0 auto;
-    }
-    .page-menu-list .menu-item {
-        position: relative;
-    }
-    .page-menu-list .menu-link,.page-menu-list .menu-item {
-        display: block;
-        padding: 15px 20px;
-        color: white;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-    .page-menu-list .menu-link:hover {
-        background-color: #2980b9;
-        text-decoration: none;
-    }
-    .dropdown-menu {
-        list-style: none;
-        margin: 0;
-        padding: 5px 0;
-        position: absolute;
-        top: 100%;
-        right: 0; /* Changed for RTL */
-        left: auto; /* Changed for RTL */
-        background-color: #2980b9;
-        min-width: 200px;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(10px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-    .menu-item:hover .dropdown-menu {
-        display: block;
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-    .dropdown-menu li a {
-        color: white;
-        padding: 10px 15px;
-        display: block;
-        white-space: nowrap;
-        text-align: right; /* Added for RTL */
-    }
-    .dropdown-menu li a:hover {
-        background-color: var(--dark-blue);
-        text-decoration: none;
-    }
+.header-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    /* --- 2.4 Main Content Area --- */
+/* --- 2.3 Page Menu (Dropdowns) --- */
+.page-menu-section {
+    width: 100%;
+    background-color: #3498db;
+    position: relative;
+    z-index: 1000;
+}
+
+.page-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    /* Added for RTL */
+    justify-content: flex-end;
+    /* Aligns items to the right */
+    max-width: var(--blog-max-width);
+    margin: 0 auto;
+}
+
+.page-menu-list .menu-item {
+    position: relative;
+}
+
+.page-menu-list .menu-link,
+.page-menu-list .menu-item {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.page-menu-list .menu-link:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    /* Changed for RTL */
+    left: auto;
+    /* Changed for RTL */
+    background-color: #2980b9;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    white-space: nowrap;
+    text-align: right;
+    /* Added for RTL */
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--dark-blue);
+    text-decoration: none;
+}
+
+/* --- 2.4 Main Content Area --- */
+.main-content-area {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    max-width: var(--blog-max-width);
+    margin: 20px auto;
+}
+
+.main-blogs {
+    flex: 1;
+    min-width: 0;
+    /* Prevents flex item from overflowing */
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+}
+
+/* --- 2.5 Footer --- */
+.footer-section {
+    background-color: var(--dark-blue);
+    color: var(--light-gray);
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: var(--blog-max-width);
+    margin: 0 auto;
+}
+
+.footer-block {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-block h3 {
+    color: white;
+}
+
+.footer-block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-block ul li a {
+    color: var(--light-gray);
+}
+
+/* --- 2.6 Attribution --- */
+.attribution-section {
+    background-color: #34495e;
+    color: #bdc3c7;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.attribution-section .widget-content {
+    padding: 0;
+}
+
+/* --- Blog Post Styles --- */
+.blog-post {
+    background: var(--content-bg-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.post-title {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.post-title a {
+    color: var(--primary-text-color);
+}
+
+.post-meta {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    margin-bottom: 15px;
+}
+
+.post-body {
+    line-height: 1.7;
+}
+
+/* --- Sidebar Widget Styles --- */
+.sidebar .widget {
+    background: var(--content-bg-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar .widget h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.sidebar .widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .widget ul li {
+    margin-bottom: 8px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
     .main-content-area {
-        display: flex;
-        padding: 20px;
-        gap: 20px;
-        max-width: var(--blog-max-width);
-        margin: 20px auto;
+        flex-direction: column;
     }
-    .main-blogs {
-        flex: 1;
-        min-width: 0; /* Prevents flex item from overflowing */
-    }
+
     .sidebar {
-        width: var(--sidebar-width);
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-nav-content {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    /* --- 2.5 Footer --- */
-    .footer-section {
-        background-color: var(--dark-blue);
-        color: var(--light-gray);
-        padding: 40px 20px;
-    }
-    .footer-content {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 20px;
-        max-width: var(--blog-max-width);
-        margin: 0 auto;
-    }
-    .footer-block {
-        flex: 1;
-        min-width: 200px;
-    }
-    .footer-block h3 {
-        color: white;
-    }
-    .footer-block ul {
-        list-style: none;
-        padding: 0;
-    }
-    .footer-block ul li a {
-        color: var(--light-gray);
+    .page-menu-list {
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* --- 2.6 Attribution --- */
-    .attribution-section {
-        background-color: #34495e;
-        color: #bdc3c7;
-        padding: 15px;
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background: #2980b9;
+        width: 100%;
         text-align: center;
-        font-size: 12px;
-    }
-    .attribution-section .widget-content {
-        padding: 0;
     }
 
-    /* --- Blog Post Styles --- */
-    .blog-post {
-        background: var(--content-bg-color);
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    .post-title {
-        font-size: 28px;
-        margin: 0 0 10px 0;
-    }
-    .post-title a {
-        color: var(--primary-text-color);
-    }
-    .post-meta {
-        font-size: 14px;
-        color: var(--secondary-text-color);
-        margin-bottom: 15px;
-    }
-    .post-body {
-        line-height: 1.7;
+    .menu-item:hover .dropdown-menu {
+        display: none;
+        /* Disable hover on mobile, requires JS for click */
     }
 
-    /* --- Sidebar Widget Styles --- */
-    .sidebar .widget {
-        background: var(--content-bg-color);
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    .sidebar .widget h2 {
-        font-size: 20px;
-        margin-top: 0;
-    }
-    .sidebar .widget ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .sidebar .widget ul li {
-        margin-bottom: 8px;
+    .menu-item .menu-link:focus+.dropdown-menu,
+    .menu-item:focus-within .dropdown-menu {
+        display: block;
+        /* Show on focus for accessibility */
+        opacity: 1;
+        transform: none;
+        visibility: visible;
     }
 
-    /* --- Responsive Design --- */
-    @media (max-width: 992px) {
-        .main-content-area {
-            flex-direction: column;
-        }
-        .sidebar {
-            width: 100%;
-        }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    @media (max-width: 768px) {
-        .top-nav-content {
-            flex-direction: column;
-            gap: 10px;
-        }
-        .page-menu-list {
-            flex-direction: column;
-            align-items: center;
-        }
-        .dropdown-menu {
-            position: static;
-            box-shadow: none;
-            background: #2980b9;
-            width: 100%;
-            text-align: center;
-        }
-        .menu-item:hover .dropdown-menu {
-            display: none; /* Disable hover on mobile, requires JS for click */
-        }
-        .menu-item .menu-link:focus + .dropdown-menu,
-        .menu-item:focus-within .dropdown-menu {
-            display: block; /* Show on focus for accessibility */
-            opacity: 1;
-            transform: none;
-            visibility: visible;
-        }
-        .footer-content {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-    }
-/*My CSS*/ height: 25px;
-  }
+}
 
-    
-    ]]></b:skin>
+/*My CSS*/
+height: 25px;
+}
+
+
+]]>
