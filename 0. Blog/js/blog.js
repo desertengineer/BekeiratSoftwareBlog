@@ -1,20 +1,43 @@
 function loadBlogData() {
-    // Declaring 
-    const blogCssFolder = "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/css/";
-    const blogJsFolder = "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/js/";
-    const blogHtmlFolder = "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/htmls/";
-    const blogXmlFolder = "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/xmls/";
-    // File & Element id arrays
-    var cssArray = [["skinStyle.css", "#page-skin-1"]];
-    var jsArray = [];
-    var htmlArray = [];
-    var xmlsArray = [];
+    // Define data objects for each category
+    const cssData = {
+        folder: "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/css/",
+        data: [
+            ["skinStyle.css", "#page-skin-1"]
+            // Add more CSS files and element IDs as needed
+        ]
+    };
 
-    // Loop on data arrays
-    if (cssArray.length != 0) {
-        cssArray.forEach(element => {
-            importHTML(blogCssFolder + element[0], element[1]);
-        });
-    }
+    const jsData = {
+        folder: "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/js/",
+        data: [
+            // ["script1.js", "#script1"],
+            // ["script2.js", "#script2"]
+        ]
+    };
 
+    const htmlData = {
+        folder: "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/htmls/",
+        data: [
+            // ["header.html", "#header"],
+            // ["footer.html", "#footer"]
+        ]
+    };
+
+    const xmlData = {
+        folder: "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/xmls/",
+        data: [
+            // ["data1.xml", "#data1"],
+            // ["data2.xml", "#data2"]
+        ]
+    };
+
+    // Loop through each data object and call importHTML if data exists
+    [cssData, jsData, htmlData, xmlData].forEach(category => {
+        if (category.data.length > 0) {
+            category.data.forEach(element => {
+                importHTML(category.folder + element[0], element[1]);
+            });
+        }
+    });
 }
