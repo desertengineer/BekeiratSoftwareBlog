@@ -1,0 +1,230 @@
+/* ————— Base & Layout ————— */
+/* reset and layout now confined to .container */
+.container {
+  margin: 0 25px!important;
+  padding: 15px!important;
+  box-sizing: border-box!important;
+  max-width: 850px!important;
+}
+
+header {
+  overflow: hidden!important;
+  margin-bottom: 20px!important;
+}
+.header-image img {
+  float: left!important;
+  width: 120px!important;
+  max-width: 100%!important;
+  height: auto!important;
+  margin-left: 15px!important;
+}
+.header-content {
+  overflow: hidden!important;
+}
+.app-name {
+  font-size: 24px!important;
+  margin: 0 0 10px 0!important;
+}
+.interstitial {
+  font-size: 16px!important;
+  margin: 0 0 10px 0!important;
+}
+.intro p {
+  font-size: 14px!important;
+  line-height: 1.5!important;
+}
+
+.section {
+  margin-bottom: 20px!important;
+}
+.section-title {
+  font-size: 20px!important;
+  margin-bottom: 10px!important;
+}
+
+.use-cases ul {
+  list-style: disc!important;
+  padding-right: 20px!important;
+}
+.use-cases li {
+  margin-bottom: 5px!important;
+}
+
+.pricing-table {
+  width: 100%!important;
+  border-collapse: collapse!important;
+}
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid currentColor!important;
+  padding: 8px!important;
+  text-align: center!important;
+}
+.pricing-table thead {
+  background-color: #f0f0f0!important;
+}
+
+.youtube-container {
+  position: relative!important;
+  padding-bottom: 56.25%!important;
+  height: 0!important;
+  overflow: hidden!important;
+}
+.youtube-container iframe {
+  position: absolute!important;
+  top: 0!important;
+  left: 0!important;
+  width: 100%!important;
+  height: 100%!important;
+}
+
+.pros-cons {
+  display: flex!important;
+  justify-content: space-between!important;
+}
+.pros, .cons {
+  width: 48%!important;
+}
+.pros h3, .cons h3 {
+  margin-bottom: 10px!important;
+}
+.pros ul, .cons ul {
+  list-style: disc!important;
+  padding-right: 20px!important;
+}
+.pros li, .cons li {
+  margin-bottom: 5px!important;
+}
+
+.app-link-container {
+  text-align: center!important;
+  margin-top: 20px!important;
+}
+.app-link {
+  display: inline-block!important;
+  padding: 10px 20px!important;
+  text-decoration: none!important;
+  border-radius: 4px!important;
+  border: 1px solid currentColor!important;
+}
+
+footer {
+  text-align: center!important;
+  font-size: 12px!important;
+  margin-top: 30px!important;
+  color: inherit!important;
+}
+
+/* ————— Theme Variants on .container ————— */
+
+/* Variant 1 */
+.container.variant-1 {
+  background-color: #f0f8ff!important;
+  color: #333333!important;
+}
+.container.variant-1 .section-title {
+  color: #005b96!important;
+}
+.container.variant-1 a {
+  color: #007acc!important;
+}
+.container.variant-1 .pricing-table thead {
+  background-color: #cce5ff!important;
+}
+
+/* Variant 2 */
+.container.variant-2 {
+  background-color: #faf0e6!important;
+  color: #333333!important;
+}
+.container.variant-2 .section-title {
+  color: #d2691e!important;
+}
+.container.variant-2 a {
+  color: #ff8c00!important;
+}
+.container.variant-2 .pricing-table thead {
+  background-color: #ffe4c4!important;
+}
+
+/* Variant 3 */
+.container.variant-3 {
+  background-color: #f0fff0!important;
+  color: #333333!important;
+}
+.container.variant-3 .section-title {
+  color: #2e8b57!important;
+}
+.container.variant-3 a {
+  color: #3cb371!important;
+}
+.container.variant-3 .pricing-table thead {
+  background-color: #d0f0c0!important;
+}
+
+/* Variant 4 */
+.container.variant-4 {
+  background-color: #e6e6fa!important;
+  color: #333333!important;
+}
+.container.variant-4 .section-title {
+  color: #6a5acd!important;
+}
+.container.variant-4 a {
+  color: #7b68ee!important;
+}
+.container.variant-4 .pricing-table thead {
+  background-color: #dcd0ff!important;
+}
+
+/* Variant 5 */
+.container.variant-5 {
+  background-color: #f5fffa!important;
+  color: #333333!important;
+}
+.container.variant-5 .section-title {
+  color: #20b2aa!important;
+}
+.container.variant-5 a {
+  color: #2e8b57!important;
+}
+.container.variant-5 .pricing-table thead {
+  background-color: #c5ffeb!important;
+}
+
+/* Variant 6 */
+.container.variant-6 {
+  background-color: #fff5ee!important;
+  color: #333333!important;
+}
+.container.variant-6 .section-title {
+  color: #cd5c5c!important;
+}
+.container.variant-6 a {
+  color: #e9967a!important;
+}
+.container.variant-6 .pricing-table thead {
+  background-color: #ffd1c1!important;
+}
+
+/* Variant 7 */
+.container.variant-7 {
+  background-color: #fdf5e6!important;
+  color: #333333!important;
+}
+.container.variant-7 .section-title {
+  color: #8b4513!important;
+}
+.container.variant-7 a {
+  color: #a0522d!important;
+}
+.container.variant-7 .pricing-table thead {
+  background-color: #ffe4c4!important;
+}
+.container[data-style="1"] { background: #fefefe !important; color: #111 !important; }
+.container[data-style="2"] { background: #eaf6ff !important; color: #000 !important; }
+.container[data-style="3"] { background: #fffaf0 !important; color: #222 !important; }
+.container[data-style="4"] { background: #f0fff5 !important; color: #111 !important; }
+.container[data-style="5"] { background: #fff0f5 !important; color: #111 !important; }
+.container[data-style="6"] { background: #f8f9fa !important; color: #111 !important; }
+.container[data-style="7"] { background: #f7f7f7 !important; color: #111 !important; }
