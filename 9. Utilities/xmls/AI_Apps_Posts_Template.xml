@@ -1,0 +1,37 @@
+<app>
+    <appName>تطبيق آخر</appName>
+    <headerImage>OtherApp.png</headerImage>
+    <interstitial>وصف مختصر للتطبيق الآخر</interstitial>
+    <introduction>مقدمة عن التطبيق الآخر...</introduction>
+    
+    <generalUse1>استخدام عام 1</generalUse1>
+    <generalUse2>استخدام عام 2</generalUse2>
+    <generalUse3>استخدام عام 3</generalUse3>
+    <generalUse4>استخدام عام 4</generalUse4>
+    
+    <plan1Name>الخطة الأساسية</plan1Name>
+    <plan1Features>ميزات الخطة الأساسية</plan1Features>
+    <plan1Price>مجانًا</plan1Price>
+    
+    <plan2Name>الخطة المتقدمة</plan2Name>
+    <plan2Features>ميزات الخطة المتقدمة</plan2Features>
+    <plan2Price>19 دولار/الشهر</plan2Price>
+    
+    <plan3Name>الخطة الاحترافية</plan3Name>
+    <plan3Features>ميزات الخطة الاحترافية</plan3Features>
+    <plan3Price>39 دولار/الشهر</plan3Price>
+    
+    <iframeSrc>https://www.youtube.com/embed/example</iframeSrc>
+    
+    <pro1>ميزة إيجابية 1</pro1>
+    <pro2>ميزة إيجابية 2</pro2>
+    <pro3>ميزة إيجابية 3</pro3>
+    <pro4>ميزة إيجابية 4</pro4>
+    
+    <con1>نقطة سلبية 1</con1>
+    <con2>نقطة سلبية 2</con2>
+    <con3>نقطة سلبية 3</con3>
+    
+    <appLink>https://example.com</appLink>
+  </app>
+</apps>
