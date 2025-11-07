@@ -1,0 +1,16 @@
+* {box-sizing: border-box;}
+body{ background-color:beige;margin:25px;}
+h1.PostTitle{font-size: 2.5em;color: #2000ff;text-align: center;}
+.PostBody{margin:10px}
+.PostIntro,.PostDesc{display:flex;} 
+.PostIntroRight{width:49.99999%;background-color:bisque;margin:10px;float:right;padding: 15px;} 
+.PostIntroLeft{}
+.PostIntroLeft img{}
+.PostDescRight{width:49.99999%;background-color:#64B5F6;margin:10px;float:right;}
+.PostDescLeft{}
+.PostDescLeft img{}
+.PostIntroRight p,.PostDesc p{font-size:large;} 
+h1.PostDescTitle{text-align:center;color:maroon;font-size:30px}
+
+@media only screen and (max-width: 650px) {.PostIntro,.PostDesc{display:block;}}
+.clearfix:after {content: "";display: table;clear: both;}
