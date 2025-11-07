@@ -1,4 +1,4 @@
 # BekeiratSoftwareBlog
 
-https://desertengineer.github.io/BekeiratApps/
+https://desertengineer.github.io/BekeiratSoftwareBlog/
 ## Welcome
