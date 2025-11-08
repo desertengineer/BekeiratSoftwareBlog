@@ -1,969 +1,1644 @@
 <!-- Sidebar (Moved to be rendered first for right alignment with flexbox) -->
-<div class='sidebar'>
-    <b:section class='sidebar-right' id='sidebar-right' showaddelement='yes'>
-        <b:widget id='Translate1' locked='false' title='ترجمة المدونة 🌐' type='Translate' version='1'>
-            <b:widget-settings>
-                <b:widget-setting name='displayMode'>VERTICAL</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-                <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title'>
-                        <data:title />
-                    </h2>
-                </b:if>
-                <div id='google_translate_element' />
-                <script> function googleTranslateElementInit() {
-                        new
-                            google.translate.TranslateElement({ pageLanguage: &#39; < data: pageLanguage />&#39;,
-                        autoDisplay: &#39; true &#39;, layout:
-                        google.translate.TranslateElement.InlineLayout. < data: layout /> },
-                  &#39; google_translate_element &#39;); } </script>
-                <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit' />
-                <b:include name='quickedit' />
-            </b:includable>
-        </b:widget>
-        <b:widget id='BlogArchive1' locked='false' title='أرشيف المدونة' type='BlogArchive' version='1'>
-            <b:widget-settings>
-                <b:widget-setting name='showStyle'>MENU</b:widget-setting>
-                <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
-                <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
-                <b:widget-setting name='monthPattern'>MMM yyyy</b:widget-setting>
-                <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
-                <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
-                <b:widget-setting name='chronological'>false</b:widget-setting>
-                <b:widget-setting name='showPosts'>false</b:widget-setting>
-                <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-                <b:if cond='data:title != &quot;&quot;'>
-                    <h2>
-                        <data:title />
-                    </h2>
-                </b:if>
-                <div class='widget-content'>
-                    <div id='ArchiveList'>
-                        <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
-                            <b:include cond='data:style == &quot;HIERARCHY&quot;' data='data' name='interval' />
-                            <b:include cond='data:style == &quot;FLAT&quot;' data='data' name='flat' />
-                            <b:include cond='data:style == &quot;MENU&quot;' data='data' name='menu' />
+<div class="sidebar">
+    <div class="sidebar-right section" id="sidebar-right">
+        <div class="widget Translate" data-version="1" id="Translate1">
+            <h2 class="title">
+                ترجمة المدونة 🌐
+            </h2>
+            <div id="google_translate_element">
+                <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
+                    <div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="Language Translate Widget">
+                            <option value="">Select Language</option>
+                            <option value="ab">Abkhaz</option>
+                            <option value="ace">Acehnese</option>
+                            <option value="ach">Acholi</option>
+                            <option value="aa">Afar</option>
+                            <option value="af">Afrikaans</option>
+                            <option value="sq">Albanian</option>
+                            <option value="alz">Alur</option>
+                            <option value="am">Amharic</option>
+                            <option value="hy">Armenian</option>
+                            <option value="as">Assamese</option>
+                            <option value="av">Avar</option>
+                            <option value="awa">Awadhi</option>
+                            <option value="ay">Aymara</option>
+                            <option value="az">Azerbaijani</option>
+                            <option value="ban">Balinese</option>
+                            <option value="bal">Baluchi</option>
+                            <option value="bm">Bambara</option>
+                            <option value="bci">Baoulé</option>
+                            <option value="ba">Bashkir</option>
+                            <option value="eu">Basque</option>
+                            <option value="btx">Batak Karo</option>
+                            <option value="bts">Batak Simalungun</option>
+                            <option value="bbc">Batak Toba</option>
+                            <option value="be">Belarusian</option>
+                            <option value="bem">Bemba</option>
+                            <option value="bn">Bengali</option>
+                            <option value="bew">Betawi</option>
+                            <option value="bho">Bhojpuri</option>
+                            <option value="bik">Bikol</option>
+                            <option value="bs">Bosnian</option>
+                            <option value="br">Breton</option>
+                            <option value="bg">Bulgarian</option>
+                            <option value="bua">Buryat</option>
+                            <option value="yue">Cantonese</option>
+                            <option value="ca">Catalan</option>
+                            <option value="ceb">Cebuano</option>
+                            <option value="ch">Chamorro</option>
+                            <option value="ce">Chechen</option>
+                            <option value="ny">Chichewa</option>
+                            <option value="zh-CN">Chinese (Simplified)</option>
+                            <option value="zh-TW">Chinese (Traditional)</option>
+                            <option value="chk">Chuukese</option>
+                            <option value="cv">Chuvash</option>
+                            <option value="co">Corsican</option>
+                            <option value="crh">Crimean Tatar (Cyrillic)</option>
+                            <option value="crh-Latn">Crimean Tatar (Latin)</option>
+                            <option value="hr">Croatian</option>
+                            <option value="cs">Czech</option>
+                            <option value="da">Danish</option>
+                            <option value="fa-AF">Dari</option>
+                            <option value="dv">Dhivehi</option>
+                            <option value="din">Dinka</option>
+                            <option value="doi">Dogri</option>
+                            <option value="dov">Dombe</option>
+                            <option value="nl">Dutch</option>
+                            <option value="dyu">Dyula</option>
+                            <option value="dz">Dzongkha</option>
+                            <option value="en">English</option>
+                            <option value="eo">Esperanto</option>
+                            <option value="et">Estonian</option>
+                            <option value="ee">Ewe</option>
+                            <option value="fo">Faroese</option>
+                            <option value="fj">Fijian</option>
+                            <option value="tl">Filipino</option>
+                            <option value="fi">Finnish</option>
+                            <option value="fon">Fon</option>
+                            <option value="fr">French</option>
+                            <option value="fr-CA">French (Canada)</option>
+                            <option value="fy">Frisian</option>
+                            <option value="fur">Friulian</option>
+                            <option value="ff">Fulani</option>
+                            <option value="gaa">Ga</option>
+                            <option value="gl">Galician</option>
+                            <option value="ka">Georgian</option>
+                            <option value="de">German</option>
+                            <option value="el">Greek</option>
+                            <option value="gn">Guarani</option>
+                            <option value="gu">Gujarati</option>
+                            <option value="ht">Haitian Creole</option>
+                            <option value="cnh">Hakha Chin</option>
+                            <option value="ha">Hausa</option>
+                            <option value="haw">Hawaiian</option>
+                            <option value="iw">Hebrew</option>
+                            <option value="hil">Hiligaynon</option>
+                            <option value="hi">Hindi</option>
+                            <option value="hmn">Hmong</option>
+                            <option value="hu">Hungarian</option>
+                            <option value="hrx">Hunsrik</option>
+                            <option value="iba">Iban</option>
+                            <option value="is">Icelandic</option>
+                            <option value="ig">Igbo</option>
+                            <option value="ilo">Ilocano</option>
+                            <option value="id">Indonesian</option>
+                            <option value="iu-Latn">Inuktut (Latin)</option>
+                            <option value="iu">Inuktut (Syllabics)</option>
+                            <option value="ga">Irish</option>
+                            <option value="it">Italian</option>
+                            <option value="jam">Jamaican Patois</option>
+                            <option value="ja">Japanese</option>
+                            <option value="jw">Javanese</option>
+                            <option value="kac">Jingpo</option>
+                            <option value="kl">Kalaallisut</option>
+                            <option value="kn">Kannada</option>
+                            <option value="kr">Kanuri</option>
+                            <option value="pam">Kapampangan</option>
+                            <option value="kk">Kazakh</option>
+                            <option value="kha">Khasi</option>
+                            <option value="km">Khmer</option>
+                            <option value="cgg">Kiga</option>
+                            <option value="kg">Kikongo</option>
+                            <option value="rw">Kinyarwanda</option>
+                            <option value="ktu">Kituba</option>
+                            <option value="trp">Kokborok</option>
+                            <option value="kv">Komi</option>
+                            <option value="gom">Konkani</option>
+                            <option value="ko">Korean</option>
+                            <option value="kri">Krio</option>
+                            <option value="ku">Kurdish (Kurmanji)</option>
+                            <option value="ckb">Kurdish (Sorani)</option>
+                            <option value="ky">Kyrgyz</option>
+                            <option value="lo">Lao</option>
+                            <option value="ltg">Latgalian</option>
+                            <option value="la">Latin</option>
+                            <option value="lv">Latvian</option>
+                            <option value="lij">Ligurian</option>
+                            <option value="li">Limburgish</option>
+                            <option value="ln">Lingala</option>
+                            <option value="lt">Lithuanian</option>
+                            <option value="lmo">Lombard</option>
+                            <option value="lg">Luganda</option>
+                            <option value="luo">Luo</option>
+                            <option value="lb">Luxembourgish</option>
+                            <option value="mk">Macedonian</option>
+                            <option value="mad">Madurese</option>
+                            <option value="mai">Maithili</option>
+                            <option value="mak">Makassar</option>
+                            <option value="mg">Malagasy</option>
+                            <option value="ms">Malay</option>
+                            <option value="ms-Arab">Malay (Jawi)</option>
+                            <option value="ml">Malayalam</option>
+                            <option value="mt">Maltese</option>
+                            <option value="mam">Mam</option>
+                            <option value="gv">Manx</option>
+                            <option value="mi">Maori</option>
+                            <option value="mr">Marathi</option>
+                            <option value="mh">Marshallese</option>
+                            <option value="mwr">Marwadi</option>
+                            <option value="mfe">Mauritian Creole</option>
+                            <option value="chm">Meadow Mari</option>
+                            <option value="mni-Mtei">Meiteilon (Manipuri)</option>
+                            <option value="min">Minang</option>
+                            <option value="lus">Mizo</option>
+                            <option value="mn">Mongolian</option>
+                            <option value="my">Myanmar (Burmese)</option>
+                            <option value="nhe">Nahuatl (Eastern Huasteca)</option>
+                            <option value="ndc-ZW">Ndau</option>
+                            <option value="nr">Ndebele (South)</option>
+                            <option value="new">Nepalbhasa (Newari)</option>
+                            <option value="ne">Nepali</option>
+                            <option value="bm-Nkoo">NKo</option>
+                            <option value="no">Norwegian</option>
+                            <option value="nus">Nuer</option>
+                            <option value="oc">Occitan</option>
+                            <option value="or">Odia (Oriya)</option>
+                            <option value="om">Oromo</option>
+                            <option value="os">Ossetian</option>
+                            <option value="pag">Pangasinan</option>
+                            <option value="pap">Papiamento</option>
+                            <option value="ps">Pashto</option>
+                            <option value="fa">Persian</option>
+                            <option value="pl">Polish</option>
+                            <option value="pt">Portuguese (Brazil)</option>
+                            <option value="pt-PT">Portuguese (Portugal)</option>
+                            <option value="pa">Punjabi (Gurmukhi)</option>
+                            <option value="pa-Arab">Punjabi (Shahmukhi)</option>
+                            <option value="qu">Quechua</option>
+                            <option value="kek">Qʼeqchiʼ</option>
+                            <option value="rom">Romani</option>
+                            <option value="ro">Romanian</option>
+                            <option value="rn">Rundi</option>
+                            <option value="ru">Russian</option>
+                            <option value="se">Sami (North)</option>
+                            <option value="sm">Samoan</option>
+                            <option value="sg">Sango</option>
+                            <option value="sa">Sanskrit</option>
+                            <option value="sat-Latn">Santali (Latin)</option>
+                            <option value="sat">Santali (Ol Chiki)</option>
+                            <option value="gd">Scots Gaelic</option>
+                            <option value="nso">Sepedi</option>
+                            <option value="sr">Serbian</option>
+                            <option value="st">Sesotho</option>
+                            <option value="crs">Seychellois Creole</option>
+                            <option value="shn">Shan</option>
+                            <option value="sn">Shona</option>
+                            <option value="scn">Sicilian</option>
+                            <option value="szl">Silesian</option>
+                            <option value="sd">Sindhi</option>
+                            <option value="si">Sinhala</option>
+                            <option value="sk">Slovak</option>
+                            <option value="sl">Slovenian</option>
+                            <option value="so">Somali</option>
+                            <option value="es">Spanish</option>
+                            <option value="su">Sundanese</option>
+                            <option value="sus">Susu</option>
+                            <option value="sw">Swahili</option>
+                            <option value="ss">Swati</option>
+                            <option value="sv">Swedish</option>
+                            <option value="ty">Tahitian</option>
+                            <option value="tg">Tajik</option>
+                            <option value="ber-Latn">Tamazight</option>
+                            <option value="ber">Tamazight (Tifinagh)</option>
+                            <option value="ta">Tamil</option>
+                            <option value="tt">Tatar</option>
+                            <option value="te">Telugu</option>
+                            <option value="tet">Tetum</option>
+                            <option value="th">Thai</option>
+                            <option value="bo">Tibetan</option>
+                            <option value="ti">Tigrinya</option>
+                            <option value="tiv">Tiv</option>
+                            <option value="tpi">Tok Pisin</option>
+                            <option value="to">Tongan</option>
+                            <option value="lua">Tshiluba</option>
+                            <option value="ts">Tsonga</option>
+                            <option value="tn">Tswana</option>
+                            <option value="tcy">Tulu</option>
+                            <option value="tum">Tumbuka</option>
+                            <option value="tr">Turkish</option>
+                            <option value="tk">Turkmen</option>
+                            <option value="tyv">Tuvan</option>
+                            <option value="ak">Twi</option>
+                            <option value="udm">Udmurt</option>
+                            <option value="uk">Ukrainian</option>
+                            <option value="ur">Urdu</option>
+                            <option value="ug">Uyghur</option>
+                            <option value="uz">Uzbek</option>
+                            <option value="ve">Venda</option>
+                            <option value="vec">Venetian</option>
+                            <option value="vi">Vietnamese</option>
+                            <option value="war">Waray</option>
+                            <option value="cy">Welsh</option>
+                            <option value="wo">Wolof</option>
+                            <option value="xh">Xhosa</option>
+                            <option value="sah">Yakut</option>
+                            <option value="yi">Yiddish</option>
+                            <option value="yo">Yoruba</option>
+                            <option value="yua">Yucatec Maya</option>
+                            <option value="zap">Zapotec</option>
+                            <option value="zu">Zulu</option>
+                        </select></div>Powered by <span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd"
+                            href="https://translate.google.com" target="_blank"><img
+                                src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png"
+                                width="37px" height="14px" style="padding-right: 3px"
+                                alt="Google Translate">Translate</a></span>
+                </div>
+            </div>
+            <script> function googleTranslateElementInit() {
+                    new
+                        google.translate.TranslateElement({
+                            pageLanguage: ' ar',
+                            autoDisplay: 'true', layout:
+                                google.translate.TranslateElement.InlineLayout.VERTICAL
+                        },
+                            'google_translate_element');
+                } </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <div class="clear"></div>
+        </div>
+        <div class="widget BlogArchive" data-version="1" id="BlogArchive1">
+            <h2>
+                أرشيف المدونة
+            </h2>
+            <div class="widget-content">
+                <div id="ArchiveList">
+                    <div id="BlogArchive1_ArchiveList">
+                        <select id="BlogArchive1_ArchiveMenu">
+                            <option value="">
+                                أرشيف المدونة
+                            </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2025/11/">
+                                نوفمبر 2025 ( 3) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2025/07/">
+                                يوليو 2025 ( 3) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2024/11/">
+                                نوفمبر 2024 ( 1) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2024/09/">
+                                سبتمبر 2024 ( 1) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2024/08/">
+                                أغسطس 2024 ( 2) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2024/07/">
+                                يوليو 2024 ( 1) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2024/06/">
+                                يونيو 2024 ( 2) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2024/05/">
+                                مايو 2024 ( 2) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2024/04/">
+                                أبريل 2024 ( 2) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2024/03/">
+                                مارس 2024 ( 2) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2024/02/">
+                                فبراير 2024 ( 2) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2024/01/">
+                                يناير 2024 ( 2) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2023/12/">
+                                ديسمبر 2023 ( 1) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2023/10/">
+                                أكتوبر 2023 ( 1) </option>
+                            <option value="https://bekeiratsoftware.blogspot.com/2023/09/">
+                                سبتمبر 2023 ( 1) </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="widget Label" data-version="1" id="Label1">
+            <h2>
+                السمات
+            </h2>
+            <div class="widget-content">
+                <ul>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%20%D8%A7%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF">
+                            أخبار اندرويد
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%20%D8%A3%D9%88%D9%81%D9%8A%D8%B3">
+                            أخبار أوفيس
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%20%D9%88%D9%8A%D9%86%D8%AF%D9%88%D8%B2">
+                            أخبار ويندوز
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%A3%D9%83%D8%B3%D9%84%20Microsoft%20Excel">
+                            أكسل Microsoft Excel
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A">
+                            الذكاء الاصطناعي
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%A3%D9%84%D8%B9%D8%A7%D8%A8%20%D8%AA%D8%AE%D9%85%D9%8A%D9%86">
+                            ألعاب تخمين
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%A5%D9%86%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88">
+                            إن فيديو
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%A8%D9%8A%D8%B1%D8%A8%D9%84%D9%8A%D9%83%D8%B3%D9%8A%D8%AA%D9%8A">
+                            بيربليكسيتي
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%AA%D8%B4%D8%A7%D8%AA%20%D8%AC%D9%8A%20%D8%A8%D9%8A%20%D8%AA%D9%8A">
+                            تشات جي بي تي
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF">
+                            تطبيقات اندرويد
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%AC%D8%B1%D8%A7%D9%85%D8%A7%D8%B1%D9%84%D9%8A">
+                            جرامارلي
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%AC%D9%8A%D8%AA%20%D9%87%D8%A8%20%D9%83%D9%88%D8%A8%D8%A7%D9%8A%D9%84%D9%88%D8%AA">
+                            جيت هب كوبايلوت
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%AC%D9%8A%D9%85%D9%8A%D9%86%D9%8A">
+                            جيميني
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%AF%D9%8A%D8%A8%20%D8%B3%D9%8A%D9%83">
+                            ديب سيك
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://bekeiratsoftware.blogspot.com/search/label/%D8%B1%D9%86%20%D9%88%D8%A7%D9%8A">
+                            رن واي
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D8%B3%D9%8A%D9%86%D8%AA%D9%8A%D8%B2%D9%8A%D8%A7">
+                            سينتيزيا
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://bekeiratsoftware.blogspot.com/search/label/%D9%83%D9%84%D9%88%D8%AF">
+                            كلود
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D9%85%D8%A7%D9%8A%D9%83%D8%B1%D9%88%D8%B3%D9%88%D9%81%D8%AA%20%D9%83%D9%88%D8%A8%D8%A7%D9%8A%D9%84%D9%88%D8%AA">
+                            مايكروسوفت كوبايلوت
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D9%85%D9%8A%D8%AF%D8%AC%D9%88%D8%B1%D9%86%D9%8A">
+                            ميدجورني
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://bekeiratsoftware.blogspot.com/search/label/%D9%85%D9%8A%D8%B3%D8%AA%D8%B1%D8%A7%D9%84">
+                            ميسترال
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://bekeiratsoftware.blogspot.com/search/label/%D9%86%D9%88%D8%B4%D9%86">
+                            نوشن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://bekeiratsoftware.blogspot.com/search/label/Windows">
+                            Windows
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="widget ContactForm" data-version="1" id="ContactForm1">
+            <h2 class="title">
+                اتصل بنا
+            </h2>
+            <div class="contact-form-widget">
+                <div class="form">
+                    <form name="contact-form">
+                        <p></p>
+                        الاسم
+                        <br>
+                        <input class="contact-form-name" id="ContactForm1_contact-form-name" name="name" size="30"
+                            type="text" value="">
+                        <p></p>
+                        بريد إلكتروني
+                        <span style="font-weight: bolder;">*</span>
+                        <br>
+                        <input class="contact-form-email" id="ContactForm1_contact-form-email" name="email" size="30"
+                            type="text" value="">
+                        <p></p>
+                        رسالة
+                        <span style="font-weight: bolder;">*</span>
+                        <br>
+                        <textarea class="contact-form-email-message" cols="25"
+                            id="ContactForm1_contact-form-email-message" name="email-message" rows="5"></textarea>
+                        <p></p>
+                        <input class="contact-form-button contact-form-button-submit"
+                            id="ContactForm1_contact-form-submit" type="button" value="إرسال">
+                        <p></p>
+                        <div style="text-align: center; max-width: 222px; width: 100%">
+                            <p class="contact-form-error-message" id="ContactForm1_contact-form-error-message"></p>
+                            <p class="contact-form-success-message" id="ContactForm1_contact-form-success-message">
+                            </p>
                         </div>
-                    </div>
-                    <b:include name='quickedit' />
+                    </form>
                 </div>
-            </b:includable>
-            <b:includable id='flat' var='data'>
-                <ul class='flat'>
-                    <b:loop values='data:data' var='i'>
-                        <li class='archivedate'>
-                            <a expr:href='data:i.url'>
-                                <data:i.name />
-                            </a> ( <data:i.post-count />)
-                        </li>
-                    </b:loop>
-                </ul>
-            </b:includable>
-            <b:includable id='interval' var='intervalData'>
-                <b:loop values='data:intervalData' var='interval'>
-                    <ul class='hierarchy'>
-                        <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
-                            <b:include cond='data:interval.toggleId' data='interval' name='toggle' />
-                            <a class='post-count-link' expr:href='data:interval.url'>
-                                <data:interval.name />
-                            </a>
-                            <span class='post-count' dir='ltr'>( <data:interval.post-count />) </span>
-                            <b:include cond='data:interval.data' data='interval.data' name='interval' />
-                            <b:include cond='data:interval.posts' data='interval.posts' name='posts' />
-                        </li>
-                    </ul>
-                </b:loop>
-            </b:includable>
-            <b:includable id='menu' var='data'>
-                <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
-                    <option value=''>
-                        <data:title />
-                    </option>
-                    <b:loop values='data:data' var='i'>
-                        <option expr:value='data:i.url'>
-                            <data:i.name /> ( <data:i.post-count />)
-                        </option>
-                    </b:loop>
-                </select>
-            </b:includable>
-            <b:includable id='posts' var='posts'>
-                <ul class='posts'>
-                    <b:loop values='data:posts' var='post'>
-                        <li>
-                            <a expr:href='data:post.url'>
-                                <data:post.title />
-                            </a>
-                        </li>
-                    </b:loop>
-                </ul>
-            </b:includable>
-            <b:includable id='toggle' var='interval'>
-                <a class='toggle' href='javascript:void(0)'>
-                    <span
-                        expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
-                        <b:if cond='data:interval.expclass == &quot;expanded&quot;'> &#9660;&#160;
-                            <b:elseif cond='data:blog.languageDirection == &quot;rtl&quot;' /> &#9668;&#160;
-                            <b:else />
-                            &#9658;&#160;
-                        </b:if>
-                    </span>
-                </a>
-            </b:includable>
-        </b:widget>
-        <b:widget id='Label1' locked='false' title='السمات' type='Label' version='1'>
-            <b:widget-settings>
-                <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-                <b:widget-setting name='display'>LIST</b:widget-setting>
-                <b:widget-setting name='selectedLabelsList'>AI Applications,Android اندرويد,Gemini
-                    جيميني,Google Play جوجل بلاي,ألعاب تخمين,الذكاء الاصطناعي AI Applications,تشات جي
-                    بي تي ChatGPT,ديب سيك DeepSeek,كلود Claude,مايكروسوفت كوبيلوت Microsoft
-                    Copilot,مفردات الإنجليزية,ميدجورني Midjourney,نوشن Notion</b:widget-setting>
-                <b:widget-setting name='showType'>ALL</b:widget-setting>
-                <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-                <h2>
-                    <data:title />
-                </h2>
-                <div class='widget-content'>
-                    <ul>
-                        <b:loop values='data:labels' var='label'>
-                            <li>
-                                <a expr:href='data:label.url'>
-                                    <data:label.name />
-                                </a>
-                            </li>
-                        </b:loop>
-                    </ul>
-                </div>
-            </b:includable>
-        </b:widget>
-        <b:widget id='ContactForm1' locked='false' title='اتصل بنا' type='ContactForm' version='1'>
-            <b:includable id='main'>
-                <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title'>
-                        <data:title />
-                    </h2>
-                </b:if>
-                <div class='contact-form-widget'>
-                    <div class='form'>
-                        <form name='contact-form'>
-                            <p />
-                            <data:contactFormNameMsg />
-                            <br />
-                            <input class='contact-form-name'
-                                expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' name='name' size='30'
-                                type='text' value='' />
-                            <p />
-                            <data:contactFormEmailMsg />
-                            <span style='font-weight: bolder;'>*</span>
-                            <br />
-                            <input class='contact-form-email'
-                                expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' name='email'
-                                size='30' type='text' value='' />
-                            <p />
-                            <data:contactFormMessageMsg />
-                            <span style='font-weight: bolder;'>*</span>
-                            <br />
-                            <textarea class='contact-form-email-message' cols='25'
-                                expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;'
-                                name='email-message' rows='5' />
-                            <p />
-                            <input class='contact-form-button contact-form-button-submit'
-                                expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;'
-                                expr:value='data:contactFormSendMsg' type='button' />
-                            <p />
-                            <div style='text-align: center; max-width: 222px; width: 100%'>
-                                <p class='contact-form-error-message'
-                                    expr:id='data:widget.instanceId + &quot;_contact-form-error-message&quot;' />
-                                <p class='contact-form-success-message'
-                                    expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;' />
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <b:include name='quickedit' />
-            </b:includable>
-        </b:widget>
-    </b:section>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
 </div>
 <!-- Main blogs -->
-<div class='main-blogs'>
-    <b:section class='main' id='main' showaddelement='yes'>
-        <b:widget id='Blog1' locked='true' title='رسائل المدونة الإلكترونية' type='Blog' version='2' visible='true'>
-            <b:widget-settings>
-                <b:widget-setting name='showDateHeader'>false</b:widget-setting>
-                <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-                <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-                <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='showAuthor'>false</b:widget-setting>
-                <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='timestampLabel' />
-                <b:widget-setting name='reactionsLabel' />
-                <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-                <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                <b:widget-setting name='showLabels'>true</b:widget-setting>
-                <b:widget-setting name='showLocation'>true</b:widget-setting>
-                <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-                <b:widget-setting name='postsPerAd'>2</b:widget-setting>
-                <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-                <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='showInlineAds'>true</b:widget-setting>
-                <b:widget-setting name='showReactions'>false</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-                <b:loop values='data:posts' var='post'>
-                    <div class='blog-post'>
-                        <h2 class='post-title'>
-                            <a expr:href='data:post.url'>
-                                <data:post.title />
-                            </a>
-                        </h2>
-                        <div class='post-meta'>
-                        </div>
-                        <div class='post-body'>
-                            <b:eval expr='data:post.body' />
-                        </div>
-                    </div>
-                </b:loop>
-                <b:include name='nextprev' />
-            </b:includable>
-            <b:includable id='aboutPostAuthor'>
-                <div class='author-name'>
-                    <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
-                        <span>
-                            <data:post.author.name />
-                        </span>
+<div class="main-blogs">
+    <div class="main section" id="main">
+        <div class="widget Blog" data-version="2" id="Blog1">
+            <div class="blog-post">
+                <h2 class="post-title">
+                    <a href="https://bekeiratsoftware.blogspot.com/2025/11/windows-microsoft-store.html">
+                        تحديثات هامة لتطبيقات Windows ومتجر Microsoft Store
                     </a>
+                </h2>
+                <div class="post-meta">
                 </div>
-                <div>
-                    <span class='author-desc'>
-                        <data:post.author.aboutMe />
-                    </span>
-                </div>
-            </b:includable>
-            <b:includable id='addComments'>
-                <a expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
-                    <b:message name='messages.postAComment' />
-                </a>
-            </b:includable>
-            <b:includable id='blogThisShare'>
-                <b:with
-                    value='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;'
-                    var='onclick'>
-                    <b:include name='platformShare' />
-                </b:with>
-            </b:includable>
-            <b:includable id='bylineByName' var='byline'>
-                <b:switch var='data:byline.name'>
-                    <b:case value='share' />
-                    <b:include cond='data:post.shareUrl' name='postShareButtons' />
-                    <b:case value='comments' />
-                    <b:include cond='data:post.allowComments' name='postCommentsLink' />
-                    <b:case value='location' />
-                    <b:include cond='data:post.location' name='postLocation' />
-                    <b:case value='timestamp' />
-                    <b:include cond='not data:view.isPage' name='postTimestamp' />
-                    <b:case value='author' />
-                    <b:include name='postAuthor' />
-                    <b:case value='labels' />
-                    <b:include cond='data:post.labels' name='postLabels' />
-                    <b:case value='icons' />
-                    <b:include cond='data:post.emailPostUrl' name='emailPostIcon' />
-                </b:switch>
-            </b:includable>
-            <b:includable id='bylineRegion' var='regionItems'>
-                <b:loop values='data:regionItems' var='byline'>
-                    <b:include data='byline' name='bylineByName' />
-                </b:loop>
-            </b:includable>
-            <b:includable id='commentAuthorAvatar'>
-                <div class='avatar-image-container'>
-                    <img class='author-avatar' expr:src='data:comment.authorAvatarSrc' height='35' width='35' />
-                </div>
-            </b:includable>
-            <b:includable id='commentDeleteIcon' var='comment'>
-                <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
-                    <b:if cond='data:showCmtPopup'>
-                        <div class='goog-toggle-button'>
-                            <div class='goog-inline-block comment-action-icon' />
-                        </div>
-                        <b:else />
-                        <a class='comment-delete' expr:href='data:comment.deleteUrl'
-                            expr:title='data:messages.deleteComment'>
-                            <img src='https://resources.blogblog.com/img/icon_delete13.gif' />
-                        </a>
-                    </b:if>
-                </span>
-            </b:includable>
-            <b:includable id='commentForm' var='post'>
-                <div class='comment-form'>
-                    <a name='comment-form' />
-                    <h4 id='comment-post-message'>
-                        <data:messages.postAComment />
-                    </h4>
-                    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
-                        <p>
-                            <data:this.messages.blogComment />
-                        </p>
-                    </b:if>
-                    <b:include data='post' name='commentFormIframeSrc' />
-                    <iframe allowtransparency='allowtransparency'
-                        class='blogger-iframe-colorize blogger-comment-from-post'
-                        expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0'
-                        id='comment-editor' name='comment-editor' src='' width='100%' />
-                    <data:post.cmtfpIframe />
-                    <script type='text/javascript'> BLOG_CMT_createIframe(&#39; <data:post.appRpcRelayPath />
-                            &#39;); </script>
-                </div>
-            </b:includable>
-            <b:includable id='commentFormIframeSrc' var='post'>
-                <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src' />
-            </b:includable>
-            <b:includable id='commentItem' var='comment'>
-                <div class='comment' expr:id='&quot;c&quot; + data:comment.id'>
-                    <b:include cond='data:blog.enabledCommentProfileImages' name='commentAuthorAvatar' />
-                    <div class='comment-block'>
-                        <div class='comment-author'>
-                            <b:if cond='data:comment.authorUrl'>
-                                <b:message name='messages.authorSaidWithLink'>
-                                    <b:param expr:value='data:comment.author' name='authorName' />
-                                    <b:param expr:value='data:comment.authorUrl' name='authorUrl' />
-                                </b:message>
-                                <b:else />
-                                <b:message name='messages.authorSaid'>
-                                    <b:param expr:value='data:comment.author' name='authorName' />
-                                </b:message>
-                            </b:if>
-                        </div>
-                        <div
-                            expr:class='&quot;comment-body&quot; + (data:comment.isDeleted ? &quot; deleted&quot; : &quot;&quot;)'>
-                            <data:comment.body />
-                        </div>
-                        <div class='comment-footer'>
-                            <span class='comment-timestamp'>
-                                <a expr:href='data:comment.url' title='comment permalink'>
-                                    <data:comment.timestamp />
-                                </a>
-                                <b:include data='comment' name='commentDeleteIcon' />
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </b:includable>
-            <b:includable id='commentList' var='comments'>
-                <div id='comments-block'>
-                    <b:loop values='data:comments' var='comment'>
-                        <b:include data='comment' name='commentItem' />
-                    </b:loop>
-                </div>
-            </b:includable>
-            <b:includable id='commentPicker' var='post'>
-                <b:if cond='data:post.showThreadedComments'>
-                    <b:include data='post' name='threadedComments' />
-                    <b:else />
-                    <b:include data='post' name='comments' />
-                </b:if>
-            </b:includable>
-            <b:includable id='comments' var='post'>
-                <section
-                    expr:class='&quot;comments&quot; + (data:post.embedCommentForm ? &quot; embed&quot; : &quot;&quot;)'
-                    expr:data-num-comments='data:post.numberOfComments' id='comments'>
-                    <a name='comments' />
-                    <b:if cond='data:post.allowComments'>
-                        <b:include name='commentsTitle' />
-                        <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
-                            <b:include cond='data:post.comments' data='post.comments' name='commentList' />
-                        </div>
-                        <b:if cond='data:post.commentPagingRequired'>
-                            <div class='paging-control-container'>
-                                <b:if cond='data:post.hasOlderLinks'>
-                                    <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
-                                        <data:messages.oldest />
-                                    </a>
-                                    <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
-                                        <data:messages.older />
-                                    </a>
-                                </b:if>
-                                <span class='comment-range-text'>
-                                    <data:post.commentRangeText />
-                                </span>
-                                <b:if cond='data:post.hasNewerLinks'>
-                                    <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
-                                        <data:messages.newer />
-                                    </a>
-                                    <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
-                                        <data:messages.newest />
-                                    </a>
-                                </b:if>
-                            </div>
-                        </b:if>
-                        <div class='footer'>
-                            <b:if cond='data:post.embedCommentForm'>
-                                <b:if cond='data:post.allowNewComments'>
-                                    <b:include data='post' name='commentForm' />
-                                    <b:else />
-                                    <data:post.noNewCommentsText />
-                                </b:if>
-                                <b:else />
-                                <b:if cond='data:post.allowComments'>
-                                    <b:include data='post' name='addComments' />
-                                </b:if>
-                            </b:if>
-                        </div>
-                    </b:if>
-                    <b:if cond='data:showCmtPopup'>
-                        <div id='comment-popup'>
-                            <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions'
-                                name='comment-actions' scrolling='no'>
-                            </iframe>
-                        </div>
-                    </b:if>
-                </section>
-            </b:includable>
-            <b:includable id='commentsLink'>
-                <a class='comment-link' expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
-                    <b:if cond='data:post.numberOfComments &gt; 0'>
-                        <b:message name='messages.numberOfComments'>
-                            <b:param expr:value='data:post.numberOfComments' name='numComments' />
-                        </b:message>
-                        <b:else />
-                        <data:messages.postAComment />
-                    </b:if>
-                </a>
-            </b:includable>
-            <b:includable id='commentsLinkIframe'>
-                <!-- G+ comments, no longer available. The includable is retained for
-                backwards-compatibility. -->
-            </b:includable>
-            <b:includable id='commentsTitle'>
-                <h3 class='title'>
-                    <data:messages.comments />
-                </h3>
-            </b:includable>
-            <b:includable id='defaultAdUnit'>
-                <ins class='adsbygoogle' data-ad-format='auto'
-                    expr:data-ad-client='data:adClientId ?: data:blog.adsenseClientId'
-                    expr:data-ad-host='data:blog.adsenseHostId' expr:style='data:style ?: &quot;display: block;&quot;'>
-                    <b:attr cond='not data:blog.analytics4' expr:value='data:blog.analyticsAccountNumber'
-                        name='data-analytics-uacct' />
-                </ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </b:includable>
-            <b:includable id='emailPostIcon'>
-                <span class='byline post-icons'>
-                    <!-- email post links -->
-                    <span class='item-action'>
-                        <a expr:href='data:post.emailPostUrl' expr:title='data:messages.emailPost'>
-                            <b:include data='{ iconClass: &quot;touch-icon sharing-icon&quot; }' name='emailIcon' />
-                        </a>
-                    </span>
-                </span>
-            </b:includable>
-            <b:includable id='facebookShare'>
-                <b:with
-                    value='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;'
-                    var='onclick'>
-                    <b:include name='platformShare' />
-                </b:with>
-            </b:includable>
-            <b:includable id='feedLinks'>
-                <b:if cond='!data:view.isPost'>
-                    <!-- Blog feed links -->
-                    <b:if cond='data:feedLinks'>
-                        <div class='blog-feeds'>
-                            <b:include data='feedLinks' name='feedLinksBody' />
-                        </div>
-                    </b:if>
-                    <b:else />
-                    <!--Post
-                  feed links -->
-                    <div class='post-feeds'>
-                        <b:loop values='data:posts' var='post'>
-                            <b:if cond='data:post.allowComments and data:post.feedLinks'>
-                                <b:include data='post.feedLinks' name='feedLinksBody' />
-                            </b:if>
-                        </b:loop>
-                    </div>
-                </b:if>
-            </b:includable>
-            <b:includable id='feedLinksBody' var='links'>
-                <div class='feed-links'>
-                    <data:messages.subscribeTo />
-                    <b:loop values='data:links' var='f'>
-                        <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'>
-                            <data:f.name /> (
-                            <data:f.feedType />)
-                        </a>
-                    </b:loop>
-                </div>
-            </b:includable>
-            <b:includable id='footerBylines'>
-                <b:if cond='data:widgets.Blog.first.footerBylines'>
-                    <b:loop index='i' values='data:widgets.Blog.first.footerBylines' var='region'>
-                        <b:if cond='not data:region.items.empty'>
-                            <div expr:class='&quot;post-footer-line post-footer-line-&quot; + (data:i + 1)'>
-                                <b:with value='&quot;footer-&quot; + (data:i + 1)' var='regionName'>
-                                    <b:include data='region.items' name='bylineRegion' />
-                                </b:with>
-                            </div>
-                        </b:if>
-                    </b:loop>
-                </b:if>
-            </b:includable>
-            <b:includable id='googlePlusShare'>
-            </b:includable>
-            <b:includable id='headerByline'>
-                <b:if cond='data:widgets.Blog.first.headerByline'>
-                    <div class='post-header'>
-                        <div class='post-header-line-1'>
-                            <b:with value='&quot;header-1&quot;' var='regionName'>
-                                <b:include data='data:widgets.Blog.first.headerByline.items' name='bylineRegion' />
-                            </b:with>
-                        </div>
-                    </div>
-                </b:if>
-            </b:includable>
-            <b:includable id='homePageLink'>
-                <a class='home-link' expr:href='data:blog.homepageUrl'>
-                    <data:messages.home />
-                </a>
-            </b:includable>
-            <b:includable id='iframeComments' var='post'>
-                <!-- G+ comments, no longer available. The includable is retained for
-                backwards-compatibility. -->
-            </b:includable>
-            <b:includable id='inlineAd' var='post'>
-                <b:if cond='!data:view.isPreview'>
-                    <b:if cond='data:this.adCode or data:this.adClientId or data:blog.adsenseClientId'>
-                        <!-- Ad -->
-                        <div class='inline-ad'>
-                            <b:if cond='data:this.adCode != &quot;&quot;'>
-                                <data:this.adCode />
-                                <b:else />
-                                <b:include cond='data:this.adClientId or data:blog.adsenseClientId'
-                                    name='defaultAdUnit' />
-                            </b:if>
-                        </div>
-                    </b:if>
-                    <b:else />
-                    <div class='inline-ad'>
-                        <div class='inline-ad-placeholder'>
-                            <span>
-                                <b:message name='messages.adsGoHere' />
-                            </span>
-                        </div>
-                    </div>
-                </b:if>
-            </b:includable>
-            <b:includable id='linkShare'>
-                <b:with
-                    value='&quot;window.prompt(\&quot;Copy to clipboard: Ctrl+C, Enter\&quot;, \&quot;&quot; + data:originalUrl + &quot;\&quot;); return false;&quot;'
-                    var='onclick'>
-                    <b:include name='platformShare' />
-                </b:with>
-            </b:includable>
-            <b:includable id='nextPageLink'>
-                <a class='blog-pager-older-link' expr:href='data:olderPageUrl'
-                    expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;'
-                    expr:title='data:messages.olderPosts'>
-                    <data:messages.olderPosts />
-                </a>
-            </b:includable>
-            <b:includable id='nextprev'>
-                <div class='blog-pager'>
-                    <b:if cond='data:newerPageUrl'>
-                        <a class='newer-link' expr:href='data:newerPageUrl' expr:title='data:newerPageTitle'>
-                            <data:newerPageTitle />
-                        </a>
-                    </b:if>
-                    <b:if cond='data:olderPageUrl'>
-                        <a class='older-link' expr:href='data:olderPageUrl' expr:title='data:olderPageTitle'>
-                            <data:olderPageTitle />
-                        </a>
-                    </b:if>
-                    <a class='home-link' expr:href='data:blog.homepageUrl'>
-                        <data:homeMsg />
-                    </a>
-                </div>
-            </b:includable>
-            <b:includable id='otherSharingButton'>
-                <span class='sharing-platform-button sharing-element-other'
-                    expr:aria-label='data:messages.shareToOtherApps.escaped' expr:data-url='data:originalUrl'
-                    expr:title='data:messages.shareToOtherApps.escaped' role='menuitem' tabindex='-1'>
-                    <b:with value='{key: &quot;sharingOther&quot;}' var='platform'>
-                        <b:include name='sharingPlatformIcon' />
-                    </b:with>
-                    <span class='platform-sharing-text'>
-                        <data:messages.shareOtherApps.escaped />
-                    </span>
-                </span>
-            </b:includable>
-            <b:includable id='platformShare'>
-                <a expr:class='&quot;goog-inline-block sharing-&quot; + data:platform.key'
-                    expr:data-url='data:originalUrl'
-                    expr:href='data:shareUrl + &quot;&amp;target=&quot; + data:platform.target'
-                    expr:onclick='data:onclick ? data:onclick : &quot;&quot;' expr:title='data:platform.shareMessage'
-                    target='_blank'>
-                    <span class='share-button-link-text'>
-                        <data:platform.shareMessage />
-                    </span>
-                </a>
-            </b:includable>
-            <b:includable id='post' var='post'>
-                <div class='post'>
-                    <b:include data='post' name='postMeta' />
-                    <b:include data='post' name='postTitle' />
-                    <b:include name='headerByline' />
-                    <b:if cond='data:view.isSingleItem'>
-                        <b:include data='post' name='postBody' />
-                        <b:else />
-                        <b:include data='post' name='postBodySnippet' />
-                        <b:include data='post' name='postJumpLink' />
-                    </b:if>
-                    <b:include data='post' name='postFooter' />
-                </div>
-            </b:includable>
-            <b:includable id='postAuthor'>
-                <span class='byline post-author vcard'>
-                    <span class='post-author-label'>
-                        <data:byline.label />
-                    </span>
-                    <span class='fn'>
-                        <b:if cond='data:post.author.profileUrl'>
-                            <meta expr:content='data:post.author.profileUrl' />
-                            <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author'
-                                title='author profile'>
-                                <span>
-                                    <data:post.author.name />
-                                </span>
-                            </a>
-                            <b:else />
-                            <span>
-                                <data:post.author.name />
-                            </span>
-                        </b:if>
-                    </span>
-                </span>
-            </b:includable>
-            <b:includable id='postBody' var='post'>
-                <!-- If metaDescription is empty, use the post body as the schema.org description
-                too, for G+/FB snippeting. -->
-                <div class='post-body entry-content float-container' expr:id='&quot;post-body-&quot; + data:post.id'>
-                    <data:post.body />
-                </div>
-            </b:includable>
-            <b:includable id='postBodySnippet' var='post'>
-                <b:include data='post' name='postBody' />
-            </b:includable>
-            <b:includable id='postCommentsAndAd' var='post'>
-                <article class='post-outer-container'>
-                    <!-- Post title and body -->
-                    <div class='post-outer'>
-                        <b:include data='post' name='post' />
-                    </div>
-                    <!-- Comments -->
-                    <b:include cond='data:view.isSingleItem' data='post' name='commentPicker' />
-                    <!-- Show ad inside post container, after comments, if single item. -->
-                    <b:include cond='data:view.isSingleItem and data:post.includeAd' data='post' name='inlineAd' />
-                </article>
-                <!-- Show ad outside post container (between posts) for feed pages. -->
-                <b:include cond='data:view.isMultipleItems and data:post.includeAd' data='post' name='inlineAd' />
-            </b:includable>
-            <b:includable id='postCommentsLink'>
-                <b:if cond='data:view.isMultipleItems'>
-                    <span class='byline post-comment-link container'>
-                        <b:include cond='data:post.commentSource != 1' name='commentsLink' />
-                    </span>
-                </b:if>
-            </b:includable>
-            <b:includable id='postFooter' var='post'>
-                <div class='post-footer'>
-                    <b:include name='footerBylines' />
-                    <b:include data='post' name='postFooterAuthorProfile' />
-                </div>
-            </b:includable>
-            <b:includable id='postFooterAuthorProfile' var='post'>
-                <b:if cond='data:post.author.aboutMe and data:view.isPost'>
-                    <div class='author-profile'>
-                        <b:if cond='data:post.author.authorPhoto.url'>
-                            <img class='author-image' expr:src='data:post.author.authorPhoto.url' width='50px' />
-                            <div class='author-about'>
-                                <b:include data='post' name='aboutPostAuthor' />
-                            </div>
-                            <b:else />
-                            <b:include data='post' name='aboutPostAuthor' />
-                        </b:if>
-                    </div>
-                </b:if>
-            </b:includable>
-            <b:includable id='postHeader' var='post'>
-                <b:include name='headerByline' />
-            </b:includable>
-            <b:includable id='postJumpLink' var='post'>
-                <div class='jump-link flat-button'>
-                    <a expr:href='data:post.url fragment &quot;more&quot;' expr:title='data:post.title'>
-                        <b:eval expr='data:blog.jumpLinkMessage' />
-                    </a>
-                </div>
-            </b:includable>
-            <b:includable id='postLabels'>
-                <span class='byline post-labels'>
-                    <span class='byline-label'>
-                        <data:byline.label />
-                    </span>
-                    <b:loop index='i' values='data:post.labels' var='label'>
-                        <a expr:href='data:label.url' rel='tag'>
-                            <data:label.name />
-                        </a>
-                    </b:loop>
-                </span>
-            </b:includable>
-            <b:includable id='postLocation'>
-                <span class='byline post-location'>
-                    <data:byline.label />
-                    <a expr:href='data:post.location.mapsUrl' target='_blank'>
-                        <data:post.location.name />
-                    </a>
-                </span>
-            </b:includable>
-            <b:includable id='postMeta' var='post'>
-                <b:include data='post' name='postMetadataJSON' />
-            </b:includable>
-            <b:includable id='postMetadataJSONImage'> &quot;image&quot;: { &quot;@type&quot;:
-                &quot;ImageObject&quot;, <b:if cond='data:post.featuredImage.isResizable'>
-                    &quot;url&quot;: &quot;
-                    <b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:630&quot;)' />&quot;,
-                    &quot;height&quot;: 630, &quot;width&quot;: 1200
-                    <b:else /> &quot;url&quot;:
-                    &quot;https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/w1200/&quot;,
-                    &quot;height&quot;: 348, &quot;width&quot;: 1200
-                </b:if> }, </b:includable>
-            <b:includable id='postMetadataJSONPublisher'>
-                &quot;publisher&quot;: {
-                &quot;@type&quot;: &quot;Organization&quot;,
-                &quot;name&quot;: &quot;Blogger&quot;,
-                &quot;logo&quot;: {
-                &quot;@type&quot;: &quot;ImageObject&quot;,
-                &quot;url&quot;:
-                &quot;https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/h60/&quot;,
-                &quot;width&quot;: 206,
-                &quot;height&quot;: 60
-                }
-                },
-            </b:includable>
-            <b:includable id='postPagination'>
-                <div class='blog-pager container' id='blog-pager'>
-                    <b:include cond='data:newerPageUrl' name='previousPageLink' />
-                    <b:include cond='data:olderPageUrl' name='nextPageLink' />
-                    <b:include cond='data:view.url != data:blog.homepageUrl' name='homePageLink' />
-                </div>
-            </b:includable>
-            <b:includable id='postReactions'>
-                <!-- Reaction feature no longer available. The includable is retained for
-                backwards-compatibility. -->
-            </b:includable>
-            <b:includable id='postShareButtons'>
-                <div class='byline post-share-buttons goog-inline-block'>
-                    <b:with
-                        value='data:sharingId ?: ((data:widget.instanceId ?: &quot;sharing&quot;) + &quot;-&quot; + (data:regionName ?: &quot;byline&quot;) + &quot;-&quot; + data:post.id)'
-                        var='sharingId'>
-                        <!-- Note: 'sharingButtons' includable is from the default Sharing widget
-                    markup. -->
-                        <b:include
-                            data='{                                                sharingId: data:sharingId,                                                originalUrl: data:post.url,                                                platforms: data:this.sharing.platforms,                                                shareUrl: data:post.shareUrl,                                                shareTitle: data:post.title,                                              }'
-                            name='sharingButtons' />
-                    </b:with>
-                </div>
-            </b:includable>
-            <b:includable id='postTimestamp'>
-                <span class='byline post-timestamp'>
-                    <data:byline.label />
-                    <b:if cond='data:post.url'>
-                        <meta expr:content='data:post.url.canonical' />
-                        <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
-                            <time class='published' expr:datetime='data:post.date.iso8601'
-                                expr:title='data:post.date.iso8601'>
-                                <data:post.date />
-                            </time>
-                        </a>
-                    </b:if>
-                </span>
-            </b:includable>
-            <b:includable id='postTitle' var='post'>
-                <a expr:name='data:post.id' />
-                <b:if cond='data:post.title != &quot;&quot;'>
-                    <h3 class='post-title entry-title'>
-                        <b:if cond='data:post.link or (data:post.url and data:view.url != data:post.url)'>
-                            <a expr:href='data:post.link ?: data:post.url'>
-                                <data:post.title />
-                            </a>
-                            <b:else />
-                            <data:post.title />
-                        </b:if>
-                    </h3>
-                </b:if>
-            </b:includable>
-            <b:includable id='previousPageLink'>
-                <a class='blog-pager-newer-link' expr:href='data:newerPageUrl'
-                    expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;'
-                    expr:title='data:messages.newerPosts'>
-                    <data:messages.newerPosts />
-                </a>
-            </b:includable>
-            <b:includable id='sharingButton'>
-                <span expr:aria-label='data:platform.shareMessage'
-                    expr:class='&quot;sharing-platform-button sharing-element-&quot; + data:platform.key'
-                    expr:data-href='data:shareUrl + &quot;&amp;target=&quot; + data:platform.target'
-                    expr:data-url='data:originalUrl' expr:title='data:platform.shareMessage' role='menuitem'
-                    tabindex='-1'>
-                    <b:include name='sharingPlatformIcon' />
-                    <span class='platform-sharing-text'>
-                        <data:platform.name />
-                    </span>
-                </span>
-            </b:includable>
-            <b:includable id='sharingButtonContent'>
-                <div class='flat-icon-button ripple'>
-                    <b:include name='shareIcon' />
-                </div>
-            </b:includable>
-            <b:includable id='sharingButtons'>
-                <div class='sharing' expr:aria-owns='&quot;sharing-popup-&quot; + data:sharingId'
-                    expr:data-title='data:shareTitle'>
-                    <button class='sharing-button touch-icon-button'
-                        expr:aria-controls='&quot;sharing-popup-&quot; + data:sharingId'
-                        expr:aria-label='data:messages.share.escaped'
-                        expr:id='&quot;sharing-button-&quot; + data:sharingId' role='button'>
-                        <b:include name='sharingButtonContent' />
-                    </button>
-                    <b:include name='sharingButtonsMenu' />
-                </div>
-            </b:includable>
-            <b:includable id='sharingButtonsMenu'>
-                <div class='share-buttons-container'>
-                    <ul aria-hidden='true' class='share-buttons hidden' expr:aria-label='data:messages.share.escaped'
-                        expr:id='&quot;sharing-popup-&quot; + data:sharingId' role='menu'>
-                        <b:loop
-                            values='(data:platforms ?: data:blog.sharing.platforms) filter (p =&gt; p.key not in {&quot;blogThis&quot;})'
-                            var='platform'>
-                            <li>
-                                <b:include name='sharingButton' />
-                            </li>
-                        </b:loop>
-                        <li aria-hidden='true' class='hidden'>
-                            <b:include name='otherSharingButton' />
-                        </li>
-                    </ul>
-                </div>
-            </b:includable>
-            <b:includable id='sharingPlatformIcon'>
-                <b:include data='{ iconClass: (&quot;touch-icon sharing-&quot; + data:platform.key) }'
-                    expr:name='data:platform.key + &quot;Icon&quot;' />
-            </b:includable>
-            <b:includable id='threadedCommentForm' var='post'>
-                <div class='comment-form'>
-                    <a name='comment-form' />
-                    <h4 id='comment-post-message'>
-                        <data:messages.postAComment />
-                    </h4>
-                    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
-                        <p>
-                            <data:this.messages.blogComment />
-                        </p>
-                    </b:if>
-                    <b:include data='post' name='commentFormIframeSrc' />
-                    <iframe allowtransparency='allowtransparency'
-                        class='blogger-iframe-colorize blogger-comment-from-post'
-                        expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0'
-                        id='comment-editor' name='comment-editor' src='' width='100%' />
-                    <data:post.cmtfpIframe />
-                    <script type='text/javascript'> BLOG_CMT_createIframe(&#39; <data:post.appRpcRelayPath />
-                            &#39;); </script>
-                </div>
-            </b:includable>
-            <b:includable id='threadedCommentJs' var='post'>
-                <script async='async' expr:src='data:post.commentSrc' type='text/javascript' />
-                <b:template-script inline='true' name='threaded_comments' />
-                <script type='text/javascript'> blogger.widgets.blog.initThreadedComments(<data:post.commentJso />
-                        , <data:post.commentMsgs />, <data:post.commentConfig />); </script>
-            </b:includable>
-            <b:includable id='threadedComments' var='post'>
-                <section class='comments threaded' expr:data-embed='data:post.embedCommentForm'
-                    expr:data-num-comments='data:post.numberOfComments' id='comments'>
-                    <a name='comments' />
-                    <b:include name='commentsTitle' />
-                    <div class='comments-content'>
-                        <b:if cond='data:post.embedCommentForm'>
-                            <b:include data='post' name='threadedCommentJs' />
-                        </b:if>
-                        <div id='comment-holder'>
-                            <data:post.commentHtml />
-                        </div>
-                    </div>
-                    <p class='comment-footer'>
-                        <b:if cond='data:post.allowNewComments'>
-                            <b:include data='post' name='threadedCommentForm' />
-                            <b:else />
-                            <data:post.noNewCommentsText />
-                        </b:if>
-                        <b:if cond='data:post.showManageComments'>
-                            <b:include data='post' name='manageComments' />
-                        </b:if>
-                    </p>
-                    <b:if cond='data:showCmtPopup'>
-                        <div id='comment-popup'>
-                            <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions'
-                                name='comment-actions' scrolling='no'>
-                            </iframe>
-                        </div>
-                    </b:if>
-                </section>
-            </b:includable>
-            <b:includable id='tooltipCss'>
-                <!-- LINT.IfChange -->
-                <style>
-                    .post-body a.b-tooltip-container {
-                        position: relative;
-                        display: inline-block;
-                    }
+                <div class="post-body">
+                    <!--DOCTYPE html-->
 
-                    .post-body a.b-tooltip-container .b-tooltip {
-                        position: absolute;
-                        top: 100%;
-                        left: 50%;
-                        transform: translate(-20%, 1px);
-                        visibility: hidden;
-                        opacity: 0;
-                        z-index: 1;
-                        transition: opacity 0.2s ease-in-out;
-                    }
 
-                    .post-body a.b-tooltip-container .b-tooltip iframe {
-                        width: 200px;
-                        height: 198px;
-                        max-width: none;
-                        border: none;
-                        border-radius: 20px;
-                        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
-                    }
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>تحديثات هامة لتطبيقات Windows ومتجر Microsoft Store</title>
+                    <style>
+                        :root {
+                            --accent: #0067b8 !important;
+                            --bg: #ffffff !important;
+                            --card: #f3f7fb !important;
+                        }
 
-                    .post-body a.b-tooltip-container:hover .b-tooltip {
-                        visibility: visible;
-                        opacity: 1;
-                    }
-                </style>
-                <!--
-                LINT.ThenChange(//depot/google3/java/com/google/blogger/b2/layouts/widgets/v2-style.css) -->
-            </b:includable>
-        </b:widget>
-    </b:section>
+                        html,
+                        body {
+                            height: 100% !important;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                            background: var(--bg) !important;
+                            font-family: "Segoe UI", "Arial", sans-serif !important;
+                            color: #111 !important;
+                            direction: rtl !important;
+                            font-size: 20px !important;
+                        }
+
+                        .container {
+                            max-width: 980px !important;
+                            margin: 28px auto !important;
+                            padding: 28px !important;
+                            background: var(--card) !important;
+                            border-radius: 14px !important;
+                            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06) !important;
+                        }
+
+                        h1.title {
+                            font-size: 36px !important;
+                            margin: 0 0 18px 0 !important;
+                            color: var(--accent) !important;
+                        }
+
+                        .image-box {
+                            background: #fff !important;
+                            border: 1px solid #e6eefc !important;
+                            padding: 18px !important;
+                            border-radius: 10px !important;
+                            font-size: 18px !important;
+                            margin-bottom: 22px !important;
+                            text-align: center !important;
+                        }
+
+                        .image-box img {
+                            max-width: 100% !important;
+                            height: auto !important;
+                            border-radius: 10px !important;
+                            margin-bottom: 12px !important;
+                        }
+
+                        .lead {
+                            font-weight: 700 !important;
+                            font-size: 20px !important;
+                            margin-bottom: 14px !important;
+                        }
+
+                        .section {
+                            margin-bottom: 18px !important;
+                            line-height: 1.7 !important;
+                            font-size: 19px !important;
+                        }
+
+                        .paragraph {
+                            margin-bottom: 14px !important;
+                        }
+
+                        .sources {
+                            background: #fff !important;
+                            border-radius: 10px !important;
+                            padding: 16px !important;
+                            font-size: 16px !important;
+                            border: 1px solid #e9f4ff !important;
+                        }
+
+                        a.source-link {
+                            color: var(--accent) !important;
+                            text-decoration: none !important;
+                            word-break: break-all !important;
+                        }
+
+                        ul {
+                            padding-inline-start: 18px !important;
+                            margin: 8px 0 !important;
+                        }
+
+                        li {
+                            margin-bottom: 8px !important;
+                        }
+
+                        @media (max-width:520px) {
+
+                            html,
+                            body {
+                                font-size: 18px !important;
+                            }
+
+                            .container {
+                                padding: 18px !important;
+                                margin: 12px !important;
+                            }
+
+                            h1.title {
+                                font-size: 28px !important;
+                            }
+
+                            .section {
+                                font-size: 17px !important;
+                            }
+                        }
+                    </style>
+
+
+                    <main class="container variant-2" role="main" aria-labelledby="post-title">
+                        <!--h1 id="post-title" class="title">تحديثات هامة لتطبيقات Windows ومتجر Microsoft Store</h1-->
+
+                        <div class="image-box" aria-label="صورة توضيحية">
+                            <img alt="صورة توضيحية لتطبيقات Windows والمتجر" loading="lazy"
+                                src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Images/Windows1.jpg">
+                            <div>صورة لشاشة لابتوب تعرض واجهة Microsoft Store مع أيقونات لتطبيقات متنوعة، فقاعة «AI
+                                Hub»، رموز التخصيص المؤسسي (Intune) ومخططات تعرض زيادة التوافر عبر الأجهزة.</div>
+                        </div>
+
+                        <p class="lead">مقدمة</p>
+                        <p class="section paragraph">أصدرت Microsoft عدة تحديثات وتحسينات مهمة لتطبيقات Windows
+                            ولتجربة Microsoft Store، تركز على توسيع فرص المطورين، تسهيل اكتشاف تطبيقات الذكاء
+                            الاصطناعي وتحسين التكامل المؤسسي.</p>
+
+                        <section class="section">
+                            <p class="paragraph"><strong>أولاً — التكامل المؤسسي وتوسيع فرص المطورين في
+                                    المتجر:</strong> أعلنت Microsoft عن توسيعات في Microsoft Store تتيح توزيع
+                                تطبيقات Win32 في وضع المعاينة، ودعم تطبيقات الذكاء الاصطناعي والتطبيقات ذات القيود
+                                العمرية عبر تكامل Intune للتوزيع المؤسسي، ما يسهل نشر التطبيقات داخل الشركات ويمنح
+                                المطورين قنوات توزيع أوسع.</p>
+
+                            <p class="paragraph"><strong>ثانيًا — تخصيص واجهة المتجر وتجربة المستخدم:</strong> بدأت
+                                Microsoft في طرح صفحة رئيسية مخصصة في Microsoft Store تعرض توصيات حسب نشاط المستخدم
+                                والمنطقة والصفقات الموضعية، مع تركيز خاص على فئات مثل الألعاب والأدوات الإنتاجية
+                                وتجارب AI، بهدف رفع معدلات الاكتشاف والمبيعات للتطبيقات.</p>
+
+                            <p class="paragraph"><strong>ثالثًا — اكتشاف تجارب الذكاء الاصطناعي عبر AI Hub ودمج
+                                    المنصات:</strong> عزّزت Microsoft حضور تطبيقات الذكاء الاصطناعي في المتجر من
+                                خلال AI Hub الذي يجمع تطبيقات AI-قوية، وبرزت مبادرات Build 2025 لتسهيل بناء ونشر
+                                تطبيقات ووكلاء AI على Windows، ما يفسح المجال لموجة جديدة من تطبيقات سطح المكتب
+                                المدعومة بالذكاء الاصطناعي.</p>
+                        </section>
+
+                        <p class="section paragraph">الخلاصة: هذه التحديثات تُظهر توجه Microsoft لتعزيز المتجر كمنصة
+                            مفتوحة أكثر للمطورين، مع أدوات نشر مؤسسية أفضل وتجارب مستخدم مُخصّصة واكتشاف مُحسّن
+                            لتطبيقات الذكاء الاصطناعي — مجملها نتائج جيدة لأي مطور أو فريق إنتاج يسعى للوصول
+                            لمستخدمي Windows.</p>
+
+                        <div class="section sources" aria-label="المصادر">
+                            <strong>المزيد من المعلومات — المصادر:</strong>
+                            <ul>
+                                <li><a class="source-link"
+                                        href="https://blogs.windows.com/windowsexperience/2025/10/30/immersive-productivity-with-windows-and-meta-quest-now-generally-available/"
+                                        rel="noopener" target="_blank">Immersive productivity with Windows and Meta
+                                        Quest — Windows Blog (Oct 30, 2025)</a></li>
+                                <li><a class="source-link"
+                                        href="https://blogs.windows.com/windowsdeveloper/2025/06/05/leveling-up-your-microsoft-store-on-windows-experience/"
+                                        rel="noopener" target="_blank">Leveling up your Microsoft Store on Windows
+                                        experience — Windows Developer Blog (Jun 5, 2025)</a></li>
+                                <li><a class="source-link"
+                                        href="https://blogs.windows.com/windowsdeveloper/2025/05/19/microsoft-store-expands-opportunities-for-windows-app-developers/"
+                                        rel="noopener" target="_blank">Microsoft Store expands opportunities for
+                                        Windows app developers — Windows Developer Blog (May 19, 2025)</a></li>
+                            </ul>
+                        </div>
+                    </main>
+
+
+                </div>
+            </div>
+            <div class="blog-post">
+                <h2 class="post-title">
+                    <a href="https://bekeiratsoftware.blogspot.com/2025/11/microsoft-excel.html">
+                        تحديثات مهمة لـ Microsoft Excel وعالم الجداول الذكية
+                    </a>
+                </h2>
+                <div class="post-meta">
+                </div>
+                <div class="post-body">
+                    <!--DOCTYPE html-->
+
+
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>تحديثات مهمة لـ Microsoft Excel وعالم الجداول الذكية</title>
+                    <style>
+                        :root {
+                            --accent: #0078d4 !important;
+                            --bg: #ffffff !important;
+                            --card: #f3f6fd !important;
+                        }
+
+                        html,
+                        body {
+                            height: 100% !important;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                            background: var(--bg) !important;
+                            font-family: "Arial", "Helvetica", sans-serif !important;
+                            color: #111 !important;
+                            direction: rtl !important;
+                        }
+
+                        .container {
+                            max-width: 900px !important;
+                            margin: 24px auto !important;
+                            padding: 24px !important;
+                            background: var(--card) !important;
+                            border-radius: 12px !important;
+                            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06) !important;
+                        }
+
+                        h1.title {
+                            font-size: 32px !important;
+                            margin: 0 0 16px 0 !important;
+                            color: var(--accent) !important;
+                        }
+
+                        .image-prompt {
+                            background: #fff !important;
+                            border: 1px solid #e6eefc !important;
+                            padding: 16px !important;
+                            border-radius: 8px !important;
+                            font-size: 16px !important;
+                            margin-bottom: 20px !important;
+                            text-align: center !important;
+                        }
+
+                        .image-prompt img {
+                            max-width: 100% !important;
+                            border-radius: 8px !important;
+                            margin-bottom: 12px !important;
+                        }
+
+                        .section {
+                            margin-bottom: 16px !important;
+                            line-height: 1.6 !important;
+                            font-size: 18px !important;
+                        }
+
+                        .lead {
+                            font-weight: 600 !important;
+                            margin-bottom: 12px !important;
+                        }
+
+                        .paragraph {
+                            margin-bottom: 12px !important;
+                        }
+
+                        .conclusion {
+                            font-weight: 700 !important;
+                            margin-top: 12px !important;
+                        }
+
+                        .sources {
+                            background: #fff !important;
+                            border-radius: 8px !important;
+                            padding: 16px !important;
+                            font-size: 15px !important;
+                            border: 1px solid #e9f0ff !important;
+                        }
+
+                        a.source-link {
+                            color: var(--accent) !important;
+                            text-decoration: none !important;
+                            word-break: break-all !important;
+                        }
+
+                        @media (max-width:520px) {
+                            .container {
+                                padding: 16px !important;
+                                margin: 12px !important;
+                            }
+
+                            h1.title {
+                                font-size: 26px !important;
+                            }
+
+                            .paragraph {
+                                font-size: 16px !important;
+                            }
+                        }
+                    </style>
+
+
+                    <main class="container" role="main" aria-labelledby="post-title">
+                        <!--h1 id="post-title" class="title">تحديثات مهمة لـ Microsoft Excel وعالم الجداول الذكية</h1-->
+
+                        <div class="image-prompt" aria-label="صورة توضيحية">
+                            <img alt="صورة توضيحية لتحديثات Excel والذكاء الاصطناعي" loading="lazy"
+                                src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Images/Excel1.jpg">
+                            <div>صورة لجهاز لابتوب يعرض شبكة Excel مع أيقونات مساعد ذكي تطفو فوق الجدول، تُظهر وظيفة
+                                =COPILOT(…) الجديدة، فقاعات وضع الوكيل (Agent Mode)، ومخططات ديناميكية تنبثق من
+                                البيانات.</div>
+                        </div>
+
+                        <p class="section lead">مقدمة</p>
+                        <p class="section paragraph">أعلنت مايكروسوفت عن عدد من التحديثات البارزة في Excel تهدف لجعل
+                            تحليل البيانات، الإنشاء السريع ونمذجة الجداول أكثر ذكاءً وسهولة. من استخدام وظائف مدعومة
+                            بالذكاء الاصطناعي (AI)، إلى تحديثات في واجهة المستخدم وعرض البيانات المتغيرة — هنا نظرة
+                            على أحدث التحسينات.</p>
+
+                        <section class="section">
+                            <p class="paragraph"><strong>أولاً — وظيفة COPILOT داخل Excel:</strong> أبرز ما تم طرحه
+                                هو وظيفة COPILOT التي تسمح بإدخال طلبات باللغة الطبيعية داخل خلية، ثم توليد نتائج
+                                ذكية مباشرة داخل الجدول. كما أن Excel بدأ في طرح “Agent Mode” الذي يتيح للمستخدمين
+                                تجربة دعم أكثر تفاعلية أثناء العمل على الجداول.</p>
+
+                            <p class="paragraph"><strong>ثانيًا — ميزات أغسطس وخارجها:</strong> في التحديثات لشهر
+                                أغسطس 2025، تم إضافة دعم لعدة ميزات مثل تحليل الصور باستخدام Python داخل Excel، ودعم
+                                الوظائف الجديدة للنصوص والمصفوفات، وتحسين أدوات الوصول للصيغ المعقدة. كما أن الإصدار
+                                القادم 2024 يعرض قدرات مثل المخططات الديناميكية والنماذج المحسّنة لتعويض البيانات
+                                المتغيرة.</p>
+
+                            <p class="paragraph"><strong>ثالثًا — Excel في عمر الأربعين:</strong> عند النظر إلى
+                                الاحتفال بمرور 40 عاماً على Excel، أوضح المقال أن البرنامج ليس مجرد جدول بيانات بل
+                                منصة إبداعية تُستخدم في النمذجة، الألعاب الإلكترونية، محاكاة البيانات وحتى الفن
+                                الرقمي. ومع التحديثات الجديدة، ترسّخ مايكروسوفت موقع Excel كأداة رائدة للمهنيين
+                                والمحللين والمبدعين على حدّ سواء.</p>
+                        </section>
+
+                        <p class="section conclusion">خلاصة</p>
+                        <p class="section paragraph">باختصار، التحديثات في Excel تُظهر تحولاً واضحاً نحو تجربة أكثر
+                            ذكاءً وتفاعلية وتحليلاً، مما يعكس نية مايكروسوفت في جعل العمل على الجداول ليس فقط أسرع،
+                            بل أكثر إبداعاً وتعاوناً. للمستخدمين والمطوّرين، هذا وقت مثير للاستفادة من هذه الإمكانات
+                            الجديدة والتفكير في طرق مبتكرة لتوظيفها.</p>
+
+                        <div class="section sources" aria-label="المصادر">
+                            <strong>المزيد من المعلومات — المصادر:</strong>
+                            <ul>
+                                <li><a class="source-link"
+                                        href="https://techcommunity.microsoft.com/blog/microsoft365insiderblog/bring-ai-to-your-formulas-with-the-copilot-function-in-excel/4443487"
+                                        rel="noopener" target="_blank">Bring AI to your formulas with the COPILOT
+                                        function in Excel — Microsoft 365 Insider Blog (Aug 18 2025)</a></li>
+                                <li><a class="source-link"
+                                        href="https://techcommunity.microsoft.com/blog/excelblog/whats-new-in-excel-august-2025/4437351"
+                                        rel="noopener" target="_blank">What’s New in Excel (August 2025) — Excel
+                                        Blog (Aug 26 2025)</a></li>
+                                <li><a class="source-link"
+                                        href="https://news.microsoft.com/signal/articles/microsoft-excel-celebrates-40-years/"
+                                        rel="noopener" target="_blank">Formulas, fandom and an AI-fueled future —
+                                        Microsoft Excel celebrates 40 years (Sep 30 2025)</a></li>
+                            </ul>
+                        </div>
+                    </main>
+
+
+                </div>
+            </div>
+            <div class="blog-post">
+                <h2 class="post-title">
+                    <a href="https://bekeiratsoftware.blogspot.com/2025/11/google-play-android.html">
+                        تحديثات هامة من Google Play و Android للألعاب والتطبيقات
+                    </a>
+                </h2>
+                <div class="post-meta">
+                </div>
+                <div class="post-body">
+                    <!--DOCTYPE html-->
+
+
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>تحديثات هامة من Google Play و Android للألعاب والتطبيقات</title>
+                    <style>
+                        :root {
+                            --accent: #1a73e8 !important;
+                            --bg: #ffffff !important;
+                            --card: #f7f9fc !important;
+                        }
+
+                        html,
+                        body {
+                            height: 100% !important;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                            background: var(--bg) !important;
+                            font-family: "Arial", "Helvetica", sans-serif !important;
+                            color: #111 !important;
+                            direction: rtl !important;
+                        }
+
+                        .container {
+                            max-width: 900px !important;
+                            margin: 24px auto !important;
+                            padding: 20px !important;
+                            background: var(--card) !important;
+                            border-radius: 12px !important;
+                            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06) !important;
+                        }
+
+                        h1.title {
+                            font-size: 30px !important;
+                            margin: 0 0 12px 0 !important;
+                            color: var(--accent) !important;
+                        }
+
+                        .image-prompt {
+                            background: #fff !important;
+                            border: 1px solid #e6eefc !important;
+                            padding: 12px !important;
+                            border-radius: 8px !important;
+                            font-size: 14px !important;
+                            margin-bottom: 14px !important;
+                            text-align: center !important;
+                        }
+
+                        .image-prompt img {
+                            max-width: 100% !important;
+                            border-radius: 8px !important;
+                            margin-bottom: 10px !important;
+                        }
+
+                        .section {
+                            margin-bottom: 12px !important;
+                            line-height: 1.6 !important;
+                            font-size: 18px !important;
+                        }
+
+                        .lead {
+                            font-weight: 600 !important;
+                            margin-bottom: 10px !important;
+                        }
+
+                        .paragraph {
+                            margin-bottom: 10px !important;
+                        }
+
+                        .conclusion {
+                            font-weight: 700 !important;
+                            margin-top: 8px !important;
+                        }
+
+                        .sources {
+                            background: #fff !important;
+                            border-radius: 8px !important;
+                            padding: 12px !important;
+                            font-size: 16px !important;
+                            border: 1px solid #e9f0ff !important;
+                        }
+
+                        a.source-link {
+                            color: var(--accent) !important;
+                            text-decoration: none !important;
+                            word-break: break-all !important;
+                        }
+
+                        footer.note {
+                            margin-top: 16px !important;
+                            font-size: 13px !important;
+                            color: #444 !important;
+                        }
+
+                        @media (max-width:520px) {
+                            .container {
+                                padding: 14px !important;
+                                margin: 12px !important;
+                            }
+
+                            h1.title {
+                                font-size: 20px !important;
+                            }
+
+                            .paragraph {
+                                font-size: 15px !important;
+                            }
+                        }
+                    </style>
+
+
+                    <main class="container" role="main" aria-labelledby="post-title">
+                        <!--h1 id="post-title" class="title">تحديثات هامة من Google Play و Android للألعاب والتطبيقات</h1-->
+
+                        <div class="image-prompt" aria-label="صورة توضيحية">
+                            <img alt="صورة توضيحية لموضوع المقال" loading="lazy"
+                                src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/Images/Android-Play.jpg">
+                            <div>صورة نابضة بالحياة لهاتف ذكي وجهاز كمبيوتر يعرضان شعار Google Play Games، تحيط به
+                                رموز لحفظ السحابة، شارات الإنجازات، أدوات تحكم (يد تحكم وفأرة) وأيقونات اكتشاف
+                                الألعاب—تمثل تجربة لعب متعددة الأجهزة وتحسين اكتشاف الألعاب.</div>
+                        </div>
+
+                        <p class="section lead">مقدمة</p>
+                        <p class="section paragraph">أعلنت Google مؤخرًا عن عدة تحديثات مهمة في نظام Google Play
+                            وAndroid تهدف لتحسين تجربة المطورين واللاعبين. التغييرات تشمل برامج مخصّصة للمطوّرين،
+                            تحسينات في متجر Play لزيادة الاكتشاف، وتوسيع الأدوات الخاصة بقياس أداء التطبيقات
+                            وإطلاقها عبر منصات متعددة.</p>
+
+                        <section class="section">
+                            <p class="paragraph"><strong>أولاً — برنامج "Level Up" لمطوّري الألعاب:</strong> أطلقت
+                                Google برنامجًا يُسمى Level Up يقدم مزايا للمطوّرين مثل أدوات جديدة في Play Console
+                                وفرص ترويجية على صفحات المتجر. يركّز البرنامج على استمرارية تجربة اللاعب عبر الحفظ
+                                السحابي واللعب متعدد الأجهزة، ونظام إنجازات ومكافآت يساعد في زيادة التفاعل.</p>
+
+                            <p class="paragraph"><strong>ثانيًا — تحسين تجربة متجر Play (تبويب "أنت" وتحديث صفحات
+                                    الألعاب):</strong> جرى تحديث واجهة المتجر بإضافة تبويب مخصص للمستخدمين يعرض
+                                الإحصاءات، الاشتراكات والمكافآت الشخصية. كما تم توسيع وصول Google Play Games على
+                                الحاسوب وتزويد صفحات الألعاب بتفاصيل أغنى عن التقدّم والعروض وأسئلة المجتمع لرفع
+                                مستوى الاكتشاف والتفاعل داخل المتجر.</p>
+
+                            <p class="paragraph"><strong>ثالثًا — أدوات مطورين أوسع ودعم إطلاق متعدد
+                                    المنصات:</strong> قدّمت Google تحسينات في تحليلات Play Console تتتبع الاكتساب
+                                والربح بدقة أكبر، مع دعم أفضل للتعريب والإطلاق العالمي. كما تم تحسين خدمات الألعاب
+                                لدعم Android وChromeOS وWindows مع ميزات اجتماعية وإحصاءات لاعبين ولعب عبر الأجهزة.
+                            </p>
+                        </section>
+
+                        <p class="section conclusion">الخلاصة</p>
+                        <p class="section paragraph">الخطوات الأخيرة تشير إلى أن Google تتحوّل إلى شريك متكامل
+                            لمطوّري الألعاب: اكتشاف أفضل داخل المتجر، الحفاظ على تواصل اللاعب عبر الأجهزة، وأدوات
+                            أعمق لقياس الأداء. هذه التحديثات تمنح مطوّري الألعاب فرصًا أقوى للوصول إلى اللاعبين
+                            وزيادة التفاعل.</p>
+
+                        <div class="section sources" aria-label="المصادر">
+                            <strong>المزيد من المعلومات — المصادر:</strong>
+                            <ul>
+                                <li><a class="source-link"
+                                        href="https://android-developers.googleblog.com/2025/09/introducing-google-play-games-level-up.html"
+                                        rel="noopener" target="_blank">Introducing the Google Play Games Level Up
+                                        program — Android Developers Blog (Sept 2025)</a></li>
+                                <li><a class="source-link"
+                                        href="https://blog.google/products/google-play/curation-update-september-2025/"
+                                        rel="noopener" target="_blank">New ways Google Play is built entirely around
+                                        you — Google Blog (Sept 2025)</a></li>
+                                <li><a class="source-link"
+                                        href="https://android-developers.googleblog.com/2025/10/new-tools-and-programs-to-accelerate.html"
+                                        rel="noopener" target="_blank">New tools and programs to accelerate your
+                                        success on Google Play — Android Developers Blog (Oct 2025)</a></li>
+                            </ul>
+                        </div>
+
+                        <footer class="note"></footer>
+                    </main>
+
+
+                </div>
+            </div>
+            <div class="blog-post">
+                <h2 class="post-title">
+                    <a href="https://bekeiratsoftware.blogspot.com/2025/07/gemini.html">
+                        جيميني Gemini: مقدمة إلى جوجل جيميني
+                    </a>
+                </h2>
+                <div class="post-meta">
+                </div>
+                <div class="post-body">
+                    <!--DOCTYPE html-->
+
+
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=890, initial-scale=1.0">
+                    <link id="theme-css" rel="stylesheet" type="text/css"
+                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/css/GenericPost01.css">
+                    <style id="dynamic-theme">
+                        :root {
+                            --bg-main: #f1f8e9 !important;
+                            --color-main: #33691e !important;
+                            --bg-header: #dcedc8 !important;
+                            --color-header: #558b2f !important;
+                            --bg-bs-section: #ffffff !important;
+                            --color-bs-section-heading: #689f38 !important;
+                            --color-bs-section-text: #33691e !important;
+                            --bg-img: #c5e1a5 !important;
+                            --bg-final: #f1f8e9 !important;
+                            --color-final-heading: #558b2f !important;
+                            --color-final-text: #33691e !important;
+                        }
+                    </style>
+                    <script src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/js/GenericPost01.js"
+                        defer=""></script>
+
+
+                    <div class="bs-post-container">
+                        <!-- Intro Header -->
+                        <div class="bs-intro-header">
+                            <div>
+                                <a
+                                    href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Google_Gemini/Gemini_10.png"><img
+                                        alt="بدء العمل مع جوجل جيميني" loading="lazy"
+                                        src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Google_Gemini/Gemini_10.png"
+                                        title="بدء العمل مع جوجل جيميني"></a>
+                            </div>
+                            <div class="intro-statement">
+                                <b>بدء استخدام جوجل جيميني هو الخطوة الأولى الأساسية للاستفادة من إمكانيات هذا
+                                    المساعد الذكي المتطور.</b>
+                                <br> سواء كنت جديدًا على نظام جوجل أو جديدًا على جيميني، فإن فهم كيفية إعداد حسابك
+                                وتثبيت التطبيق والتنقل عبر واجهته سيُرسي أساسًا قويًا لاستخدامه بثقة.
+                                <br>
+                                <i>دعنا نلقي نظرة سريعة على عملية الاتصال هذه</i>
+                            </div>
+                        </div>
+                        <!-- bs-section 1 -->
+                        <div class="bs-section">
+                            <div class="bs-section-heading">إعداد حسابك على Google</div>
+                            <div class="bs-section-content">
+                                <div>
+                                    <a
+                                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Create_SignIn_Google_Account.gif"><img
+                                            alt="إعداد حسابك على Google" class="bs-section-img" loading="lazy"
+                                            src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Create_SignIn_Google_Account.gif"
+                                            title="إعداد حسابك على Google"></a>
+                                </div>
+                                <div class="bs-section-text">
+                                    <i>الخطوة الأساسية الأولى قبل البدء في استخدام جوجل جيميني هي أن يكون لديك حساب
+                                        Google.</i>
+                                    <ul>
+                                        <li><b>قم بإنشاء حساب جوجل الخاص بك:</b>إذا كان لديك واحد بالفعل ، فأنت جاهز
+                                            للمضي قدما. إذا لم يكن الأمر كذلك ، فإن إنشاء حساب جوجل أمر بسيط. يمكنك
+                                            إنشاء واحدة من خلال الانتقال إلى صفحة الاشتراك في جوجل وتقديم معلومات
+                                            أساسية مثل اسمك واسم المستخدم وكلمة المرور الآمنة.</li>
+                                        <li><b>التحقق والتأمين:</b>بعد إنشاء حسابك، ستطلب منك جوجل إثبات ملكية رقم
+                                            هاتفك أو بريدك الإلكتروني البديل. تساعد هذه الخطوة في حماية حسابك من
+                                            خلال تمكين خيارات الاسترداد. يجب أن تفكر أيضا في تمكين المصادقة الثنائية
+                                            في إعدادات حسابك لزيادة الأمان ، خاصة وأن حساب جوجل الخاص بك سيكون متصلا
+                                            بخدمات متعددة بما في ذلك جيميني.</li>
+                                        <li><b>المزامنة عبر الأجهزة:</b>يعد حساب جوجل الخاص بك أكثر من مجرد بيانات
+                                            اعتماد تسجيل الدخول ؛ فهو يعمل كمفتاح لمزامنة بياناتك وتفضيلاتك عبر
+                                            الأجهزة. بمجرد تسجيل الدخول ، يمكنك الوصول إلى جوجل جيميني بسلاسة على
+                                            أجهزة مختلفة ، مع الاحتفاظ بجلستك وتفضيلاتك وسجلك ، مما يحسن تجربتك
+                                            الإجمالية مع التطبيق.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bs-section 2 -->
+                        <div class="bs-section">
+                            <div class="bs-section-heading">تنزيل تطبيق جيميني وتثبيته</div>
+                            <div class="bs-section-content">
+                                <div>
+                                    <a
+                                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Getting Started with Google Gemini/download Google Play Gemini.png">
+                                        <img alt="تنزيل تطبيق جيميني وتثبيته" class="bs-section-img" loading="lazy"
+                                            src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Getting Started with Google Gemini/download Google Play Gemini.png"
+                                            title="تنزيل تطبيق جيميني وتثبيته"></a>
+                                </div>
+                                <div class="bs-section-text">
+                                    <i>لاستخدام جوجل جيميني على جهازك المحمول ، خاصة إذا كنت من مستخدمي Android ،
+                                        فإن الخطوة الأولى هي تنزيل تطبيق جيميني من متجر جوجل Play.</i>
+                                    <ul>
+                                        <li><b>ابحث عن التطبيق:</b>قد تأتي بعض الأجهزة مع جيميني مثبتة مسبقا أو
+                                            كمساعد افتراضي ، ولكن بالنسبة للآخرين ، ستحتاج إلى تثبيته يدويا.</li>
+                                        <li><b>عملية التثبيت:</b>بعد تحديد موقع التطبيق في متجر Play ، انقر فوق
+                                            "تثبيت" وانتظر حتى يكتمل التنزيل والتثبيت. بمجرد التثبيت ، قد تحتاج إلى
+                                            منح أذونات معينة ، مثل الوصول إلى الميكروفون أو جهات الاتصال ، للسماح ل
+                                            جيميني بالعمل بشكل صحيح.</li>
+                                        <li><b>الإعداد:</b>عند فتح التطبيق لأول مرة ، سيطالبك بتسجيل الدخول باستخدام
+                                            حساب جوجل الخاص بك. هذه الخطوة مهمة لأنها تربط التطبيق بملفك الشخصي
+                                            وتسمح ل جيميني بتخصيص استجاباته ومزامنة بياناتك. إذا استبدل جيميني مساعد
+                                            جوجل على جهازك ، فسيصبح مساعدك الصوتي الأساسي الذي يمكن الوصول إليه عبر
+                                            عبارات مثل "Hey Google".</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bs-section 3 -->
+                        <div class="bs-section">
+                            <div class="bs-section-heading">التنقل في واجهة جيميني</div>
+                            <div class="bs-section-content">
+                                <div>
+                                    <a
+                                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Getting Started with Google Gemini/Navigating the Gemini Interface.png">
+                                        <img alt="التنقل في واجهة جيميني" class="bs-section-img" loading="lazy"
+                                            src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Getting Started with Google Gemini/Navigating the Gemini Interface.png"
+                                            title="التنقل في واجهة جيميني"></a>
+                                </div>
+                                <div class="bs-section-text">
+                                    <i></i>
+                                    <ul>
+                                        <li><b>تعرف على الشاشة الرئيسية</b>عند فتح جوجل جيميني ، سيتم الترحيب بك
+                                            بواجهة نظيفة وبسيطة. يوجد في الجزء السفلي من الشاشة موجه الأوامر حيث
+                                            تكتب أو تنطق أسئلتك أو أوامرك. عادة ما يعرض الشريط الجانبي أو القائمة
+                                            محادثاتك السابقة، مما يسمح لك بإعادة زيارة التفاعلات السابقة أو
+                                            متابعتها.</li>
+                                        <li><b>خيارات الإدخال</b>يدعم جيميني كلا من إدخال النص والصوت، مما يجعله
+                                            متعدد الاستخدامات للمستخدمين والمواقف المختلفة. يمكنك كتابة مطالبات
+                                            مفصلة أو التحدث بشكل طبيعي للحصول على إجابات أو اقتراحات أو إكمال
+                                            المهام. تعرض الواجهة أيضا الوسائل المرئية ذات الصلة أو الصور المصغرة أو
+                                            الإجابات البديلة لتحسين الفهم.</li>
+                                        <li><b>استكشاف الإعدادات والميزات</b>داخل الواجهة ، يمكنك الوصول إلى
+                                            الإعدادات لتخصيص سلوك جيميني وإدارة خصوصيتك وتخصيص الإشعارات. هناك أيضا
+                                            خيارات لاستكشاف أوضاع التخصص أو عمليات التكامل مع خدمات جوجل الأخرى ،
+                                            مما يساعدك على إنجاز المزيد من المهام دون مغادرة التطبيق.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="blog-post">
+                <h2 class="post-title">
+                    <a href="https://bekeiratsoftware.blogspot.com/2025/07/blog-post.html">
+                        جيميني Gemini: إطلاق العنان لقوة جيميني : أهم الاستخدامات الرائعة
+                    </a>
+                </h2>
+                <div class="post-meta">
+                </div>
+                <div class="post-body">
+                    <!--DOCTYPE html-->
+
+
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=890, initial-scale=1.0">
+                    <link id="theme-css" rel="stylesheet" type="text/css"
+                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/css/GenericPost01.css">
+                    <style id="dynamic-theme"></style>
+                    <script src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/js/GenericPost01.js"
+                        defer=""></script>
+
+
+                    <div class="bs-post-container">
+                        <!-- Intro Header -->
+                        <div class="bs-intro-header">
+                            <div><a
+                                    href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Introduction_to_Google_Gemini_Post/Introduction_to_Google_Gemini_00.png">
+                                    <img alt="إطلاق العنان لقوة جيميني : أهم الاستخدامات الرائعة" loading="lazy"
+                                        src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Introduction_to_Google_Gemini_Post/Introduction_to_Google_Gemini_00.png"
+                                        title="إطلاق العنان لقوة جيميني : أهم الاستخدامات الرائعة"></a></div>
+                            <div class="intro-statement">
+                                <b>يعمل الذكاء الاصطناعي على تغيير طريقة عملنا وإبداعنا وتعلمنا بسرعة.</b>
+                                <br> في طليعة هذه الثورة يبرز جيميني (عائلة جوجل) من نماذج الذكاء الاصطناعي متعددة
+                                الوسائط. على عكس نماذج اللغات السابقة ، تم تصميم جيميني من الألف إلى الياء للمنطق
+                                بسلاسة عبر النصوص والصور والصوت والفيديو ، مما يجعله أداة متعددة الاستخدامات بشكل
+                                فريد.
+                                <br>
+                                <i>فيما يلي بعض الطرق الأكثر إثارة للإعجاب والعملية التي يستخدمها الناس جيميني .</i>
+                            </div>
+                        </div>
+                        <!-- bs-section 1 -->
+                        <div class="bs-section">
+                            <div class="bs-section-heading">الشريك الإبداعي: من الفكرة إلى التحفة الفنية</div>
+                            <div class="bs-section-content">
+                                <div><a
+                                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Introduction_to_Google_Gemini_Post/Introduction_to_Google_Gemini_04.png">
+                                        <img alt="الشريك الإبداعي: من الفكرة إلى التحفة الفنية" class="bs-section-img"
+                                            loading="lazy"
+                                            src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Introduction_to_Google_Gemini_Post/Introduction_to_Google_Gemini_04.png"
+                                            title="الشريك الإبداعي: من الفكرة إلى التحفة الفنية"></a></div>
+                                <div class="bs-section-text">
+                                    <i>جيميني هو أكثر من مجرد مساعد كتابة. إنه متعاون إبداعي حقيقي.</i>
+                                    <ul>
+                                        <li><b>إنشاء المحتوى:</b>عالق مع كتلة الكاتب؟ يمكن أن يساعدك جيميني في تبادل
+                                            الأفكار ، أو صياغة منشور مدونة ، أو كتابة بريد إلكتروني تسويقي مقنع ، أو
+                                            حتى صياغة قصة قصيرة كاملة بالشخصيات ونقاط الحبكة. يمكن أن تتبنى نغمات
+                                            وأنماط مختلفة ، مما يجعلها مثالية لمجموعة متنوعة من المهام الإبداعية.
+                                        </li>
+                                        <li><b>الفن والتصميم:</b>بفضل قدراته متعددة الوسائط ، يمكن للجيميني إنشاء
+                                            صور وفن من أوصاف نصية بسيطة. يمكنك وصف مشهد أو أسلوب أو مفهوم ، وسوف
+                                            يجعله ينبض بالحياة بصريا. يمكن أن يساعد أيضا في أعمال التصميم من خلال
+                                            اقتراح لوحات الألوان والتخطيطات وأزواج الخطوط.</li>
+                                        <li><b>كتابة السيناريو والشعر:</b>سواء كنت تعمل على سيناريو أو سوناتة ، يمكن
+                                            أن يساعد جيميني في تنظيم الحوار أو إنشاء أوصاف مثيرة للذكريات أو العثور
+                                            على الإيقاع والقافية المثاليين لقصيدتك التالية.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bs-section 2 -->
+                        <div class="bs-section">
+                            <div class="bs-section-heading">معزز الإنتاجية النهائي: العمل بذكاء وليس بجهد أكبر</div>
+                            <div class="bs-section-content">
+                                <div><a
+                                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Introduction_to_Google_Gemini_Post/Introduction_to_Google_Gemini_07.png">
+                                        <img alt="معزز الإنتاجية النهائي: العمل بذكاء وليس بجهد أكبر"
+                                            class="bs-section-img" loading="lazy"
+                                            src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Introduction_to_Google_Gemini_Post/Introduction_to_Google_Gemini_07.png"
+                                            title="معزز الإنتاجية النهائي: العمل بذكاء وليس بجهد أكبر"></a></div>
+                                <div class="bs-section-text">
+                                    <i>في العالم المهني ، يعد جيميني بمثابة تغيير لقواعد اللعبة من أجل الكفاءة.</i>
+                                    <ul>
+                                        <li><b>التلخيص والتحليل:</b>هل تغمرك التقارير الطويلة أو الأوراق البحثية؟
+                                            يمكن لجيميني تقطير المعلومات المعقدة إلى ملخصات موجزة وسهلة الهضم. يمكنه
+                                            أيضا تحليل نصوص الاجتماع لاستخراج عناصر وقرارات الإجراءات الرئيسية.</li>
+                                        <li><b>الكود والتطوير:</b>هذا هو المكان الذي يتألق فيه جيميني للمطورين.
+                                            يمكنه إنشاء مقتطفات من التعليمات البرمجية بلغات برمجة متعددة ، وتصحيح
+                                            أخطاء التعليمات البرمجية الحالية ، وحتى شرح الوظائف المعقدة سطرا بسطر.
+                                            يمكن للمطورين استخدامه لإنشاء تطبيقات كاملة وإنشاء نماذج أولية وتعلم
+                                            تقنيات جديدة بشكل أسرع.</li>
+                                        <li><b>تفسير البيانات:</b>امنح جيميني مجموعة بيانات ، ويمكن أن تساعدك في
+                                            العثور على الأنماط وتحديد الاتجاهات وإنشاء تصورات. يمكن أن يشرح ما تعنيه
+                                            البيانات ، ويوفر رؤى قد تستغرق ساعات من التحليل اليدوي.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bs-section 3 -->
+                        <div class="bs-section">
+                            <div class="bs-section-heading">مساعد المعرفة والتعلم: مدرسك الشخصي</div>
+                            <div class="bs-section-content">
+                                <div><a
+                                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Introduction_to_Google_Gemini_Post/Introduction_to_Google_Gemini_01.png">
+                                        <img alt="مساعد المعرفة والتعلم: مدرسك الشخصي" class="bs-section-img"
+                                            loading="lazy"
+                                            src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Introduction_to_Google_Gemini_Post/Introduction_to_Google_Gemini_01.png"
+                                            title="مساعد المعرفة والتعلم: مدرسك الشخصي"></a></div>
+                                <div class="bs-section-text">
+                                    <i>جيميني هي أداة رائعة للتعليم وتحسين الذات.</i>
+                                    <ul>
+                                        <li><b>تبسيط الموضوعات المعقدة:</b>هل تحتاج إلى فهم الحوسبة الكمومية أو
+                                            مبادئ الديناميكا الحرارية؟ يمكن لجيميني تقسيم هذه الموضوعات الصعبة إلى
+                                            مصطلحات بسيطة ومفهومة ، والعمل كمدرس شخصي لتوجيه تعلمك.</li>
+                                        <li><b>خطط الدراسة المخصصة:</b>أخبر جيميني بما تريد تعلمه ، ويمكنه إنشاء
+                                            جدول دراسة مخصص ، مكتمل بالموارد وأسئلة الممارسة ومعالم التعلم المصممة
+                                            خصيصا لسرعتك.</li>
+                                        <li><b>اللغة والترجمة:</b>بالإضافة إلى الترجمة البسيطة ، يمكن أن يساعدك
+                                            جيميني في تحسين كتابتك ، واقتراح مفردات أفضل ، والتحقق من الأخطاء
+                                            النحوية. إنها أداة ممتازة لإتقان لغة جديدة أو تحسين مهارات الاتصال لديك.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bs-section 4 -->
+                        <div class="bs-section">
+                            <div class="bs-section-heading">المساعد اليومي: حل المشكلات الشائعة</div>
+                            <div class="bs-section-content">
+                                <div><a
+                                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Introduction_to_Google_Gemini_Post/Introduction_to_Google_Gemini_03.png">
+                                        <img alt="المساعد اليومي: حل المشكلات الشائعة" class="bs-section-img"
+                                            loading="lazy"
+                                            src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/Introduction_to_Google_Gemini_Post/Introduction_to_Google_Gemini_03.png"
+                                            title="المساعد اليومي: حل المشكلات الشائعة"></a></div>
+                                <div class="bs-section-text">
+                                    <i>جيميني ليس فقط للمشاريع الكبيرة. إنه رائع للمهام اليومية.</i>
+                                    <ul>
+                                        <li><b>التخطيط والتنظيم:</b>سواء كنت تخطط لرحلة أو تنظم حفلة أو تدير مشروعا
+                                            معقدا ، يمكن أن يساعدك جيميني في إنشاء مسارات وقوائم مرجعية وجداول زمنية
+                                            مفصلة.</li>
+                                        <li><b>العصف الذهني وحل المشكلات:</b>استخدم جيميني كشريك تعاوني لترتد
+                                            الأفكار منه. يمكن أن يقدم وجهات نظر مختلفة ، ويتحدى افتراضاتك ، ويساعدك
+                                            في إيجاد حلول إبداعية للمشكلات التي تواجهها.</li>
+                                        <li><b>تخطيط الوصفات والوجبات:</b>هل تبحث عن وصفات جديدة بناء على المكونات
+                                            التي لديك؟ يمكن لجيميني إنشاء وصفات وإنشاء قائمة تسوق ومساعدتك في
+                                            التخطيط لوجباتك لهذا الأسبوع.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Final bs-section -->
+                        <div class="final-bs-section">
+                            <div class="final-heading">خلاصة</div>
+                            <div class="final-paragraph">من المهنيين المبدعين والمطورين إلى الطلاب والمستخدمين
+                                العاديين ، فإن تطبيقاتها واسعة ومتنوعة.</div>
+                            <div class="final-paragraph">مع استمرار تطور التكنولوجيا ، يمكننا أن نتوقع أن تصبح
+                                جيميني أداة لا غنى عنها ، مما يزيد من قدراتنا ويفتح إمكانيات جديدة لا يمكننا إلا أن
+                                نبدأ في تخيلها.</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="blog-post">
+                <h2 class="post-title">
+                    <a href="https://bekeiratsoftware.blogspot.com/2025/08/blog-post_8.html">
+                        جيميني Gemini: بدء العمل مع جوجل جيميني
+                    </a>
+                </h2>
+                <div class="post-meta">
+                </div>
+                <div class="post-body">
+                    <!--DOCTYPE html-->
+
+
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=890, initial-scale=1.0">
+                    <link id="theme-css" rel="stylesheet" type="text/css"
+                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/css/GenericPost01.css">
+                    <style id="dynamic-theme"></style>
+                    <script src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/js/GenericPost01.js"
+                        defer=""></script>
+
+
+                    <div class="bs-post-container">
+                        <!-- Intro Header -->
+                        <div class="bs-intro-header">
+                            <div><a
+                                    href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Google_Gemini/Gemini_05.png"><img
+                                        alt="مقدمة إلى جوجل جيميني" loading="lazy"
+                                        src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Google_Gemini/Gemini_05.png"
+                                        title="مقدمة إلى جوجل جيميني"></a></div>
+                            <div class="intro-statement">
+                                <b></b>
+                                <br> &nbsp;في عصر التكنولوجيا الحديثة، أصبح الذكاء الاصطناعي رفيقًا أساسيًا في
+                                حياتنا اليومية. Google Gemini هو أحد هذه الأدوات المتطورة التي تقدم حلولًا ذكية
+                                لتحسين الإنتاجية والتواصل. وهو تطبيق متقدم من جوجل يدمج الذكاء الاصطناعي لمساعدتك في
+                                أداء المهام المختلفة، من التفاعل الصوتي إلى إدارة المعلومات بكل سهولة وفاعلية.
+                                <br>
+                                <i>في هذا المنشور، سنتناول ثلاثة مواضيع رئيسية لفهم ماهية Google Gemini، فوائده،
+                                    ونماذج استشارية عملية لاستخدامه في سياقات متعددة.</i>
+                            </div>
+                        </div>
+                        <!-- bs-section 1 -->
+                        <div class="bs-section">
+                            <div class="bs-section-heading">ما هو Google Gemini؟</div>
+                            <div class="bs-section-content">
+                                <div>
+                                    <a
+                                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Google_Gemini/Gemini_08.png">
+                                        <img alt="ما هو Google Gemini؟" class="bs-section-img" loading="lazy"
+                                            src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Google_Gemini/Gemini_08.png"
+                                            title="ما هو Google Gemini؟"></a>
+                                </div>
+                                <div class="bs-section-text">
+                                    <i>لفهم Google Gemini، يجب أن نبدأ بالتعريف بما يقدمه هذا النظام وكيف يعمل.</i>
+                                    <ul>
+                                        <li><b>التعريف</b>Google Gemini هو منصة ذكاء اصطناعي متقدمة تم تطويرها ضمن
+                                            منظومة جوجل لتقديم مساعد ذكي يفهم السياق ويتفاعل مع المستخدم بشكل طبيعي.
+                                        </li>
+                                        <li><b>تطبيقات متعددة</b>يُستخدم Google Gemini في مجموعة واسعة من الوظائف،
+                                            سواء في التفاعل مع الأجهزة، أو تقديم المساعدة بالتوجيهات، أو تقديم دعم
+                                            ذكي في العمل اليومي.</li>
+                                        <li><b>تطور مستمر</b>مع التحديثات المستمرة من جوجل، يزداد Google Gemini قدرة
+                                            على فهم الطلبات المعقدة وتحسين جودة الردود بشكل يقرب تجربة المستخدم إلى
+                                            التفاعل البشري.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bs-section 2 -->
+                        <div class="bs-section">
+                            <div class="bs-section-heading">فوائد Google Gemini</div>
+                            <div class="bs-section-content">
+                                <div>
+                                    <a
+                                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Google_Gemini/Gemini_04.png">
+                                        <img alt="فوائد Google Gemini" class="bs-section-img" loading="lazy"
+                                            src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Google_Gemini/Gemini_04.png"
+                                            title="فوائد Google Gemini"></a>
+                                </div>
+                                <div class="bs-section-text">
+                                    <i>&nbsp;التعرف على المزايا العملية لـ Google Gemini يساعد في استغلاله بكفاءة
+                                        لتحقيق أفضل النتائج.</i>
+                                    <ul>
+                                        <li><b>تعزيز الإنتاجية</b>&nbsp;باستخدام Google Gemini، يمكن للمستخدمين
+                                            توفير الوقت والجهد من خلال إنجاز المهام الروتينية بسرعة ودقة عالية.</li>
+                                        <li><b>تجربة مستخدم محسنة</b>يوفر Google Gemini واجهة تفاعلية سهلة الاستخدام
+                                            تدعم الصوت والنص، مما يجعل التعامل مع التكنولوجيا أكثر مرونة وسلاسة.
+                                        </li>
+                                        <li><b>دعم متقدم</b>تتيح إمكانيات الذكاء الاصطناعي المتقدمة في Gemini تقديم
+                                            مساعدة مخصصة تلبي احتياجات الأفراد والمؤسسات على حد سواء.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bs-section 3 -->
+                        <div class="bs-section">
+                            <div class="bs-section-heading">نماذج لاستخدام Google Gemini في سياقات مختلفة</div>
+                            <div class="bs-section-content">
+                                <div>
+                                    <a
+                                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Google_Gemini/Gemini_07.png">
+                                        <img alt="نماذج لاستخدام Google Gemini في سياقات مختلفة" class="bs-section-img"
+                                            loading="lazy"
+                                            src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/ContentImages/CommonImages/Google_Gemini/Gemini_07.png"
+                                            title="نماذج لاستخدام Google Gemini في سياقات مختلفة"></a>
+                                </div>
+                                <div class="bs-section-text">
+                                    <i>الاستفادة القصوى من Google Gemini تتم من خلال استخدامه في مواقف وسياقات
+                                        متنوعة تتطلب استشارات ذكية.</i>
+                                    <ul>
+                                        <li><b>نماذج عملية</b>يمكن للمستخدمين تجربة مجموعة من العبارات أو الأوامر
+                                            التي تتناسب مع مجالات العمل المختلفة مثل التعليم، الأعمال التجارية،
+                                            الحياة الشخصية، وغيرها.</li>
+                                        <li><b>تخصيص الاستخدام</b>تتنوع النماذج وفقًا للسياق، مما يمكّن المستخدم من
+                                            توجيه Gemini بطرق تلبي احتياجاته الخاصة سواء في التخطيط، البحث، أو
+                                            الترفيه.</li>
+                                        <li><b></b></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Final bs-section -->
+                        <div class="final-bs-section">
+                            <div class="final-heading">انطلاقتك مع Google Gemini</div>
+                            <div class="final-paragraph">لا تتوقف عند البداية، بل استمر في استكشاف المزيد من
+                                إمكانيات Google Gemini لتجعل منه أداة يومية تدعمك في مختلف جوانب حياتك. جرب استخدام
+                                Google Gemini في مواقف مختلفة وراقب كيف يتغير أسلوب إنجاز مهامك اليومية ويزداد
+                                إنتاجيتك بفضل الذكاء الاصطناعي من جوجل.</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="blog-post">
+                <h2 class="post-title">
+                    <a href="https://bekeiratsoftware.blogspot.com/2024/11/midjourney.html">
+                        برنامج قوي بشكل استثنائي متخصص في إنشاء الصور بناءً على الأوصاف النصية ميدجورني Midjourney
+                    </a>
+                </h2>
+                <div class="post-meta">
+                </div>
+                <div class="post-body">
+
+
+
+                    <meta charset="UTF-8">
+                    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                    <link
+                        href="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/css/AppsPromotion_combined.css"
+                        rel="stylesheet">
+
+
+                    <div class="container variant-5" data-app="Midjourney">
+                        <header>
+                            <div class="header-image">
+                                <img alt="صورة تعريفية لتطبيق Midjourney" id="headerImage" loading="lazy"
+                                    src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/AI_Apps_Images/Midjourney.png">
+                            </div>
+                            <div class="header-content">
+                                <h1 class="app-name" id="appName">Midjourney</h1>
+                                <p class="interstitial" id="interstitial">ابتكر صوراً مذهلة عبر أوامر نصية بسيطة</p>
+                                <div class="intro">
+                                    <p id="introduction">Midjourney هو أداة توليد صور AI عبر أوامر نصية تقدم خيارات
+                                        متنوعة للمستخدمين.</p>
+                                </div>
+                            </div>
+                        </header>
+
+                        <div class="section">
+                            <h2 class="section-title">الاستخدامات العامة</h2>
+                            <div class="use-cases" id="useCases">
+                                <ul>
+                                    <li>صور فنية وإبداعية</li>
+                                    <li>تصميم مفاهيم</li>
+                                    <li>صور توضيحية</li>
+                                    <li>استكشاف أنماط</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h2 class="section-title">خطط التسعير</h2>
+                            <table class="pricing-table">
+                                <thead>
+                                    <tr>
+                                        <th>الخطة</th>
+                                        <th>المميزات</th>
+                                        <th>السعر</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="pricingPlans">
+                                    <tr>
+                                        <td>Basic</td>
+                                        <td>200 دقائق GPU</td>
+                                        <td>10$/شهر</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Standard</td>
+                                        <td>15ساعات GPU</td>
+                                        <td>30$/شهر</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pro</td>
+                                        <td>Mega images</td>
+                                        <td>60$/شهر</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="section">
+                            <h2 class="section-title">فيديو تعريفي</h2>
+                            <div class="youtube-container">
+                                <iframe allowfullscreen="" id="youtubeIframe"
+                                    src="https://www.youtube.com/embed/lfDfEgKyo2c"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h2 class="section-title">الإيجابيات والسلبيات</h2>
+                            <div class="pros-cons">
+                                <div class="pros">
+                                    <h3>الإيجابيات</h3>
+                                    <ul id="prosList">
+                                        <li>ثقة عالية في النتائج</li>
+                                        <li>خيارات تسريع GPU</li>
+                                        <li>تنوع إبداعي</li>
+                                        <li>خطط مرنة</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h3>السلبيات</h3>
+                                    <ul id="consList">
+                                        <li>لا يوجد خطة مجانية جديدة</li>
+                                        <li>قيود دقيقة GPU</li>
+                                        <li>يعتمد على توجيه النص</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="app-link-container">
+                            <a class="app-link" href="https://www.midjourney.com" id="appLink" target="_blank">زيارة
+                                الموقع الرسمي</a>
+                        </div>
+                    </div>
+                    <script
+                        src="https://desertengineer.github.io/Common/BekeiratSoftwareBlog/js/Apps_Styles.js"></script>
+
+
+
+                </div>
+            </div>
+            <div class="blog-pager">
+                <a class="older-link"
+                    href="https://bekeiratsoftware.blogspot.com/search?updated-max=2024-11-15T17:55:00%2B02:00&amp;max-results=7"
+                    title="">
+                    <!--Can't find substitution for tag [olderPageTitle]-->
+                </a>
+                <a class="home-link" href="https://bekeiratsoftware.blogspot.com/">
+                    <!--Can't find substitution for tag [homeMsg]-->
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
