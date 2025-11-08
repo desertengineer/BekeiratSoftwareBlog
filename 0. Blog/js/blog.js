@@ -22,7 +22,10 @@ function loadBlogData() {
         folder: "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/htmls/",
         data: [
             ["top-nav-section.html", ".top-nav-section"],
-            ["header-section.html", "#header"]
+            ["header-section.html", "#header"],
+            ["page-menu-section.html", ".page-menu-section"]
+            // ["footer-section.html", "footer"]
+            // Add more HTML files and element IDs as needed
         ]
     };
 
