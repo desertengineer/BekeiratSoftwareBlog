@@ -26,7 +26,7 @@ function loadBlogData() {
             ["3-page-menu-section.html", ".page-menu-section"],
             ["4-main-content-area.html", ".main-content-area"], 
             ["5-footer-section.html", ".footer-section"],
-            // Add more HTML files and element IDs as needed
+            ["6-attribution-section.html", ".attribution-section"] 
         ]
     };
 
