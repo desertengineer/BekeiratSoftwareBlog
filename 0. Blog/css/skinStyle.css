@@ -8,7 +8,7 @@
     --primary-text-color: #333333 !important;
     --secondary-text-color: #555555 !important;
     --accent-color: #0e0fd8 !important;
-    --dark-blue: #2c3e50 !important;
+    --dark-blue: #061d34 !important;
     --light-gray: #ecf0f1 !important;
     --border-color: #e0e0e0 !important;
     --blog-max-width: 1300px !important;
@@ -333,7 +333,7 @@ h6 {
     .dropdown-menu {
         position: static !important;
         box-shadow: none !important;
-        background: #2980b9 !important;
+        background: #1717c6 !important;
         width: 100% !important;
         text-align: center !important;
     }
