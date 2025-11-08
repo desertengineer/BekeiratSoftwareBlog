@@ -25,8 +25,8 @@ function loadBlogData() {
             ["2-header-section.html", "#header"],
             ["3-page-menu-section.html", ".page-menu-section"],
             ["4-sidebar.html", ".main-content-area.sidebar"],
-            ["4-main-blogs.html", ".main-content-area.main-blogs"]
-            // ["5-footer-section.html", "footer"]
+            ["4-main-blogs.html", ".main-content-area.main-blogs"],
+            ["5-footer-section.html", ".footer-section"]
             // Add more HTML files and element IDs as needed
         ]
     };
