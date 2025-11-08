@@ -21,9 +21,9 @@ function loadBlogData() {
     const htmlData = {
         folder: "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/htmls/",
         data: [
-            ["top-nav-section.html", ".top-nav-section"],
-            ["header-section.html", "#header"],
-            ["page-menu-section.html", ".page-menu-section"]
+            ["1-top-nav-section.html", ".top-nav-section"],
+            ["2-header-section.html", "#header"],
+            ["3-page-menu-section.html", ".page-menu-section"]
             // ["footer-section.html", "footer"]
             // Add more HTML files and element IDs as needed
         ]
