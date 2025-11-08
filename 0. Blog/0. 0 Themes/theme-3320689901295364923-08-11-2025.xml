@@ -32,12 +32,6 @@
             </div>
             <!-- 1.4 Main area -->
             <div class='main-content-area'>
-                <!-- Sidebar (Moved to be rendered first for right alignment with flexbox) -->
-                <div class='sidebar'>
-                </div>
-                <!-- Main blogs -->
-                <div class='main-blogs'>
-                </div>
             </div>
             <!-- 1.5 The footer -->
             <div class='footer-section'>

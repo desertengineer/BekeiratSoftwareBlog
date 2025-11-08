@@ -123,14 +123,13 @@
                 <b:include data='post' name='commentFormIframeSrc' />
                 <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post'
                     expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor'
-                    name='comment-editor' src='' width='100%' />
+                    name='comment-editor' src='' width='100%'></iframe>
                 <data:post.cmtfpIframe />
-                <script type='text/javascript'> BLOG_CMT_createIframe(&#39; <data:post.appRpcRelayPath />
-                        &#39;); </script>
+                <script type='text/javascript'> BLOG_CMT_createIframe(' <data:post.appRpcRelayPath />'); </script>
             </div>
         </b:includable>
         <b:includable id='commentFormIframeSrc' var='post'>
-            <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src' />
+            <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'></a>
         </b:includable>
         <b:includable id='commentItem' var='comment'>
             <div class='comment' expr:id='&quot;c&quot; + data:comment.id'>
@@ -682,7 +681,7 @@
         </b:includable>
         <b:includable id='threadedCommentForm' var='post'>
             <div class='comment-form'>
-                <a name='comment-form' />
+                <a name='comment-form'></a>
                 <h4 id='comment-post-message'>
                     <data:messages.postAComment />
                 </h4>
@@ -694,23 +693,21 @@
                 <b:include data='post' name='commentFormIframeSrc' />
                 <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post'
                     expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor'
-                    name='comment-editor' src='' width='100%' />
+                    name='comment-editor' src='' width='100%'></iframe>
                 <data:post.cmtfpIframe />
-                <script type='text/javascript'> BLOG_CMT_createIframe(&#39; <data:post.appRpcRelayPath />
-                        &#39;); </script>
+                <script type='text/javascript'> BLOG_CMT_createIframe(' <data:post.appRpcRelayPath />'); </script>
             </div>
         </b:includable>
         <b:includable id='threadedCommentJs' var='post'>
-            <script async='async' expr:src='data:post.commentSrc' type='text/javascript' />
+            <script async='async' expr:src='data:post.commentSrc' type='text/javascript'></script>
             <b:template-script inline='true' name='threaded_comments' />
             <script type='text/javascript'>
-                blogger.widgets.blog.initThreadedComments(<data:post.commentJso />
-                    , <data:post.commentMsgs />, <data:post.commentConfig />); </script>
+                blogger.widgets.blog.initThreadedComments(<data:post.commentJso />, <data:post.commentMsgs />, <data:post.commentConfig />); </script>
         </b:includable>
         <b:includable id='threadedComments' var='post'>
             <section class='comments threaded' expr:data-embed='data:post.embedCommentForm'
                 expr:data-num-comments='data:post.numberOfComments' id='comments'>
-                <a name='comments' />
+                <a name='comments'></a>
                 <b:include name='commentsTitle' />
                 <div class='comments-content'>
                     <b:if cond='data:post.embedCommentForm'>
