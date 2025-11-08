@@ -32,7 +32,7 @@ function linkAction(action) {
  * @param {string} elemSelector - CSS selector of the element to inject the content into.
  */
 async function importHTML(filePath, elemSelector) {
-    console.log("Hello: importHTML");
+    // console.log("Hello: importHTML");
     try {
         const response = await fetch(filePath);
         if (!response.ok) throw new Error(`Failed to fetch: ${response.statusText}`);
