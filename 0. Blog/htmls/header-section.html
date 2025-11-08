@@ -1,0 +1,43 @@
+                <b:widget id='Header1' locked='true'
+                    title='برمجيات بكيرات Bekeirat Software (رأس الصفحة)' type='Header' version='1'>
+                    <b:widget-settings>
+                        <b:widget-setting name='displayUrl' />
+                        <b:widget-setting name='displayHeight'>0</b:widget-setting>
+                        <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+                        <b:widget-setting name='useImage'>false</b:widget-setting>
+                        <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                        <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+                        <b:widget-setting name='displayWidth'>0</b:widget-setting>
+                    </b:widget-settings>
+                    <b:includable id='main'>
+                        <div class='header-section'>
+                            <a expr:href='data:blog.homepageUrl'>
+                                <b:if cond='data:image'>
+                                    <img expr:alt='data:title' expr:height='data:height'
+                                        expr:id='data:widget.instanceId + &quot;_headerimg&quot;'
+                                        expr:src='data:image.url' expr:width='data:width'
+                                        style='display: block' />
+                                    <b:else />
+                                    <!-- Fallback if no image is uploaded -->
+                                    <img alt='Blog Header Image'
+                                        src='https://desertengineer.github.io/Common/BekeiratSoftwareBlog/0. Blog_Arts/header.png' />
+                                </b:if>
+                            </a>
+                        </div>
+                    </b:includable>
+                    <b:includable id='description'>
+                        <div class='descriptionwrapper'>
+                            <p class='description'>
+                                <span>
+                                    <data:description />
+                                </span>
+                            </p>
+                        </div>
+                    </b:includable>
+                    <b:includable id='title'>
+                        <b:tag cond='data:blog.url != data:blog.homepageUrl'
+                            expr:href='data:blog.homepageUrl' name='a'>
+                            <data:title />
+                        </b:tag>
+                    </b:includable>
+                </b:widget>
