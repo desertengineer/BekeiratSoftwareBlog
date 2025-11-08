@@ -21,8 +21,8 @@ function loadBlogData() {
     const htmlData = {
         folder: "https://raw.githubusercontent.com/desertengineer/BekeiratSoftwareBlog/refs/heads/main/0.%20Blog/htmls/",
         data: [
-            ["header-section.html", ".header-section"],
-            ["top-nav-section.html", ".top-nav-section"]
+            ["top-nav-section.html", ".top-nav-section"],
+            ["header-section.html", "#header"]
         ]
     };
 
